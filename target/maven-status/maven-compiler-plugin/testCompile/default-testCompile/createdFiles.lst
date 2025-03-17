@@ -1,0 +1,16 @@
+utilities\RequestProvider.class
+runners\TestRunner.class
+steps\api\CommonStepDefinitionsApi.class
+steps\BaseSteps.class
+utilities\ScenarioManager.class
+utilities\ResponseManager.class
+steps\api\CustomerStepsDefinitions.class
+utilities\ConfigReader.class
+utilities\BaseRequest.class
+utilities\BrowserManager.class
+utilities\RequestManager.class
+apis\customer\CustomerRequest.class
+steps\ui\LoginStepDefinition.class
+hooks\Hooks.class
+utilities\Logs.class
+utilities\RequestFilter.class

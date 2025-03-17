@@ -1,0 +1,7 @@
+pages\BasePage.class
+pages\HomePage.class
+models\User.class
+utilities\GlobalVariables.class
+pages\RegisterPage.class
+utilities\ScreenShotUtil.class
+pages\BasePage$SelectionType.class
