@@ -6,6 +6,7 @@ C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\utilities\S
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\steps\BaseSteps.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\utilities\ResponseManager.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\runners\TestRunner.java
+C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\steps\ui\OppenAccountStepsDefinition.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\steps\api\CommonStepDefinitionsApi.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\hooks\Hooks.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\test\java\utilities\BrowserManager.java

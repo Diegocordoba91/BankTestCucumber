@@ -4,7 +4,7 @@ Feature: Registro de usuarios
     Background:
         Given El usuario se encuentra en la pagina de registro de usuario
     
-    @regression @smoke
+    @regression @smoke @API
     Scenario: Creación de nuevo usuario
         When El formulario de creación de usuario debe ser visible
         And Se ingresan los datos de usuario tipo "VALIDO"
@@ -33,6 +33,10 @@ Feature: Registro de usuarios
         And Se ingresan los datos de usuario tipo "CONTRASEÑA_INVALIDA"
         And El usuario hace click en el boton register
         Then Se verifica que el sistema no permita el registro del usuario
+
+    
+
+
 
     
         

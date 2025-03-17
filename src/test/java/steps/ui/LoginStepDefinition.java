@@ -21,7 +21,7 @@ public class LoginStepDefinition extends BaseSteps{
 
     private final ScenarioManager   scenarioManager = ScenarioManager.getScenarioManager();
     private GlobalVariables globalVariables = GlobalVariables.getInstance();
-    private boolean isUserSuccessfull=false;
+   
     
     //Background
     @Given("El usuario se encuentra en la pagina de registro de usuario")
@@ -48,14 +48,14 @@ public class LoginStepDefinition extends BaseSteps{
     @Then("El usuario hace click en el boton register")
     public void El_usuario_hace_click_en_el_boton_register() throws InterruptedException {
         
-        isUserSuccessfull = registerPage.clickButtonRegisterNewAccount();
+        registerPage.clickButtonRegisterNewAccount();
     }    
 
 
     
     @When("Se verifica que el nombre de usuario sea válido; en caso contrario, se intenta con uno nuevo")
     public void Se_verifica_que_el_nombre_de_usuario_sea_v_lido_en_caso_contrario_se_intenta_con_uno_nuevo() throws InterruptedException {
-        var result = registerPage.verifyRegisterUserSuccessful(isUserSuccessfull);
+        var result = registerPage.verifyRegisterUserSuccessful(registerPage.verifyTitleRegisterPage());
         scenarioManager.log("La cantidad de intentos fueron: "+result);
         scenarioManager.log("Usuario creado : "+globalVariables.getUserName()+" con password: "+globalVariables.getPassword());
     }
@@ -77,11 +77,12 @@ public class LoginStepDefinition extends BaseSteps{
     @Then("Se verifica que el sistema no permita el registro del usuario")
     public void Se_verifica_que_el_sistema_no_permita_el_registro_del_usuario() throws InterruptedException {
         scenarioManager.log("Name:  "+globalVariables.getName()+", Lastname: "+globalVariables.getLastName());
-        scenarioManager.takesScreenshot(this.driver);
+        takeScreenshot();
         Assert.assertTrue(registerPage.verifyTitleRegisterPage(),"Error: El sistema permitio el registro del usuario con caracteres especiales");
         
         
     }
+
 
     
 }

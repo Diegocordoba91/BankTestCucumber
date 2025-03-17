@@ -33,15 +33,14 @@ public class Hooks {
     @Before(value = "@API")
     public void setupApi(Scenario scenario){
         requestManager.initRequest();
-        scenarioManager.setScensario(scenario);
-        
+        scenarioManager.setScensario(scenario);        
         
     }
 
     
     @After(value = "@UI")
     public void tearDownWebDriver(){
-        scenarioManager.takesScreenshot(driver);
+        scenarioManager.takesScreenshot(driver, "HOOKS");
         BrowserManager.quitDriver();
         scenarioManager.log("✅ Scenario finished: " + scenarioManager.getScenarioStatus());
 

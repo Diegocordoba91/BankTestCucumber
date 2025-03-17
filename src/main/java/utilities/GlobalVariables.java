@@ -9,6 +9,8 @@ public class GlobalVariables {
     private String userName;
     private String password;
     private int idUser;
+    private int newAccountSaving;
+    private int newAccountChecking;
 
     private GlobalVariables() {}
 
@@ -66,6 +68,24 @@ public class GlobalVariables {
         this.lastName = lastName;
     }
 
-    
+
+
+    public int getNewAccountSaving() {
+        return newAccountSaving;
+    }
+
+    public void setNewAccountSaving(int newAccountSaving) {
+        this.newAccountSaving = newAccountSaving;
+    }
+
+    public int getNewAccountChecking() {
+        return newAccountChecking;
+    }
+
+    public void setNewAccountChecking(int newAccountChecking) {
+        this.newAccountChecking = newAccountChecking;
+    }
+
+
 
 }

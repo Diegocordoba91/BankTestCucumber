@@ -5,6 +5,7 @@ steps\BaseSteps.class
 utilities\ScenarioManager.class
 utilities\ResponseManager.class
 steps\api\CustomerStepsDefinitions.class
+steps\ui\OppenAccountStepsDefinition.class
 utilities\ConfigReader.class
 utilities\BaseRequest.class
 utilities\BrowserManager.class

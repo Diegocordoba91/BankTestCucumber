@@ -1,4 +1,5 @@
 pages\BasePage.class
+pages\OpenAccountPage.class
 pages\HomePage.class
 models\User.class
 utilities\GlobalVariables.class

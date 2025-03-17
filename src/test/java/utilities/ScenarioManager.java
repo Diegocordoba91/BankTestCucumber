@@ -41,14 +41,29 @@ public class ScenarioManager {
         return scenario;
     }
 
-    public void takesScreenshot(WebDriver driver)    {
-            if (scenario.isFailed()) {
-            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", "ScreenShot");
+    public void takesScreenshot(WebDriver driver,String type)    {
+            
+        switch (type) {
+            case "HOOKS":
+                if (scenario.isFailed()) {
+                    byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                    scenario.attach(screenshot, "image/png", "ScreenShot");
+                }
+                break;
+            case "STEPS":
+                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot, "image/png", "ScreenShot");
+                break;
+       
+            default:
+                throw new IllegalArgumentException("Invalid type of screenshot: " + type);
         }
 
-
+            
     }
+
+
+    
 
     public String getScenarioStatus(){
         return scenario.getStatus().toString();

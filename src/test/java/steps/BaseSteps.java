@@ -12,7 +12,9 @@ import hooks.Hooks;
 import io.cucumber.java.Scenario;
 import pages.BasePage;
 import pages.HomePage;
+import pages.OpenAccountPage;
 import pages.RegisterPage;
+import utilities.GlobalVariables;
 import utilities.ScenarioManager;
 import utilities.ScreenShotUtil;
 
@@ -28,15 +30,17 @@ public class BaseSteps{
     protected HomePage homePage = new HomePage(driver, wait, actions);
     protected RegisterPage registerPage = new RegisterPage(driver, wait, actions);
     protected ScenarioManager scenarioManager = ScenarioManager.getScenarioManager();
-
-    protected void takesScreenshot(Scenario scenario) {
-            if (scenario.isFailed()) {
-            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", "ScreenShot");
-        }
-
-
+    protected OpenAccountPage openAccount = new OpenAccountPage(driver, wait, actions);
+    protected GlobalVariables globalVariables = GlobalVariables.getInstance();
+    
+    public void takeScreenshot(){
+        scenarioManager.takesScreenshot(driver, "STEPS");
     }
+
+
+
+
+    
     
     
     

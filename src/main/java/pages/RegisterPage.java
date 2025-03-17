@@ -143,23 +143,20 @@ public class RegisterPage extends BasePage{
                 this.clickElement(buttonRegisterForm);
                 count++;
             }
-            
-            
-            globalVariables.setUserName(userGlobalVariable.userName());
-            globalVariables.setPassword(userGlobalVariable.password());
-            globalVariables.setName(userGlobalVariable.firstName());    
-            globalVariables.setLastName(userGlobalVariable.lastaName());
-
-
+        
         }
+        globalVariables.setUserName(userGlobalVariable.userName());
+        globalVariables.setPassword(userGlobalVariable.password());
+        globalVariables.setName(userGlobalVariable.firstName());    
+        globalVariables.setLastName(userGlobalVariable.lastaName());
              
        
         return count;        
     }
 
-    public boolean clickButtonRegisterNewAccount() throws InterruptedException{
+    public void clickButtonRegisterNewAccount() throws InterruptedException{
         this.clickElement(buttonRegisterForm);
-        return this.elementDispaleyed(titleRegisterPage);
+    
 
     }
 
