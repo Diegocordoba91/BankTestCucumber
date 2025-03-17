@@ -74,6 +74,17 @@ public class OpenAccountPage extends BasePage{
         
     }
 
+    public int  getAccount(String typeAccount){
+
+        switch (typeAccount) {
+            case "SAVINGS":
+                return globalVariables.getNewAccountSaving();
+            case "CHECKING":
+                return globalVariables.getNewAccountChecking();
+            default: 
+             throw new IllegalArgumentException("Tipo de cuenta invalida: "+typeAccount);       
+        }
+    }    
     
 
 

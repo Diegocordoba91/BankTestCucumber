@@ -18,3 +18,12 @@ Feature: Open new account
         And Se hace click en el boton Open Account
         Then Se verifica que el sistema muestre el mensaje Account Opened!
         And Se captura el numero de cuenta "SAVINGS" creado para futuras validaciones
+
+    @OPEN
+    Scenario: Open new checking account
+        When El usuario hace click en el boton Open New Account
+        And Se verifica que se despliegue el formulario de creacion de cuenta
+        And Se selecciona el tipo de cuenta "CHECKING"
+        And Se hace click en el boton Open Account
+        Then Se verifica que el sistema muestre el mensaje Account Opened!
+        And Se captura el numero de cuenta "CHECKING" creado para futuras validaciones

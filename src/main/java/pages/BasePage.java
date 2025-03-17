@@ -130,7 +130,7 @@ public class BasePage {
         Select select = new Select(element);
         
         try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(locator,1));
             switch (selectionType) {
                 case TEXT:
                     select.selectByVisibleText(selectectionValue);
