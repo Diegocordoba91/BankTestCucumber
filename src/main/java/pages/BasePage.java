@@ -1,5 +1,6 @@
 package pages;
 
+import java.lang.reflect.Array;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,28 +12,36 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.lu.a;
+import utilities.GlobalVariables;
 import utilities.ScreenShotUtil;
 
 public class BasePage {
 
+    protected GlobalVariables globalVariables = GlobalVariables.getInstance();
     public WebDriver driver;
     public WebDriverWait wait;
     public Actions actions ;
+    
 
     
 
     public BasePage(WebDriver driver, WebDriverWait wait, Actions actions) {
+        
+        
+
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         this.actions = new Actions(driver);
     }
 
     protected String getTitle() throws InterruptedException {
+        waitForPageToLoad();
         try {
             wait.until(wd -> 
             ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
@@ -48,6 +57,7 @@ public class BasePage {
     }
 
     protected void clickElement (By locator) throws InterruptedException{
+        waitForPageToLoad();
 
         try {
             wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -60,6 +70,7 @@ public class BasePage {
     }
 
     protected String getTextElement(By locator){
+        waitForPageToLoad();
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             return this.driver.findElement(locator).getText();
@@ -70,6 +81,7 @@ public class BasePage {
     }
 
     protected void sendText(By locator, String text) throws InterruptedException{
+        waitForPageToLoad();
 
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -82,6 +94,7 @@ public class BasePage {
     }
 
     protected boolean elementDispaleyed(By locator) throws InterruptedException{
+        waitForPageToLoad();
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             return this.driver.findElement(locator).isDisplayed();
@@ -105,6 +118,7 @@ public class BasePage {
     }
 
     protected WebElement findElement(By locator){
+        waitForPageToLoad();
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return this.driver.findElement(locator);
     }
@@ -125,12 +139,11 @@ public class BasePage {
 
     protected void selectionDropdownItem (By locator,  SelectionType selectionType , String selectectionValue){
         
-        
+        waitForPageToLoad();
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         WebElement element = driver.findElement(locator);
         Select select = new Select(element);
-        
-        try {
-            wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(locator,1));
+        try {            
             switch (selectionType) {
                 case TEXT:
                     select.selectByVisibleText(selectectionValue);
@@ -146,11 +159,11 @@ public class BasePage {
                         System.out.println("Error: para la opción index, debe ingresar un número");
                     }
                 default:
-                    System.out.println("Error: selectionTypre no valido, debe ingresar 'text, 'value', o 'index'");
+                    throw new IllegalArgumentException("Opción de selección no válida: " + selectionType);
             }
             
         } catch (Exception e) {
-            System.out.println("El localizador "+locator+" no se encuentra visible");
+            throw new RuntimeException("El localizador "+locator+" no se encuentra visible");
         }
 
         
@@ -187,5 +200,30 @@ public class BasePage {
         return result;
     }
 
+    public ArrayList<List<String>> readTable(By locator) throws InterruptedException{ 
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+        List<WebElement> rows = driver.findElements(By.xpath(".//tbody/tr"));
+
+        ArrayList<List<String>> table = new ArrayList<>();
+
+        for (WebElement row : rows) {
+            List<WebElement> cells = row.findElements(By.tagName("td"));
+            List<String> rowData = new ArrayList<>();
+            for (WebElement cell : cells) {
+                rowData.add(cell.getText());
+            }
+            
+            table.add(rowData);
+        }  
+
+        return table;
+    }
+
+    public void waitForPageToLoad(){
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver)
+                .executeScript("return document.readyState").equals("complete"));
+    }
 
 }

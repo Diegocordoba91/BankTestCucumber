@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: io.cucumber.junit.platform.engine.CucumberTestEngine
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.16 s -- in io.cucumber.junit.platform.engine.CucumberTestEngine
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 65.42 s <<< FAILURE! -- in io.cucumber.junit.platform.engine.CucumberTestEngine
+Open new account.Open new account - Open new saving account -- Time elapsed: 36.40 s <<< FAILURE!
+java.lang.AssertionError: El sistema no muestra el mensaje Account Opened! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at steps.ui.OppenAccountStepsDefinition.Se_verifica_que_el_sistema_muestre_el_mensaje_Account_Opened(OppenAccountStepsDefinition.java:89)
+	at ✽.Se verifica que el sistema muestre el mensaje Account Opened!(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/1_ui/2_OpenAccount.feature:19)
+

@@ -10,10 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import hooks.Hooks;
 import io.cucumber.java.Scenario;
+import pages.AccountOverviewPage;
 import pages.BasePage;
 import pages.HomePage;
 import pages.OpenAccountPage;
 import pages.RegisterPage;
+import pages.TransferFoundsPage;
 import utilities.GlobalVariables;
 import utilities.ScenarioManager;
 import utilities.ScreenShotUtil;
@@ -32,6 +34,8 @@ public class BaseSteps{
     protected ScenarioManager scenarioManager = ScenarioManager.getScenarioManager();
     protected OpenAccountPage openAccount = new OpenAccountPage(driver, wait, actions);
     protected GlobalVariables globalVariables = GlobalVariables.getInstance();
+    protected TransferFoundsPage transferFoundsPage = new TransferFoundsPage(driver, wait, actions);
+    protected AccountOverviewPage accountOverviewPage = new AccountOverviewPage(driver, wait, actions);
     
     public void takeScreenshot(){
         scenarioManager.takesScreenshot(driver, "STEPS");

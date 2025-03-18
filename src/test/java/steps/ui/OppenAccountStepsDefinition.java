@@ -33,7 +33,7 @@ public class OppenAccountStepsDefinition extends BaseSteps{
 
     @Then("Se verifica si el login fue exitoso")
     public void Se_verifica_si_el_login_fue_exitoso_de_lo_contrario_se_crea_un_nuevo_usuario() throws InterruptedException {
-        loginSuccessful = homePage.loginSuccessful();
+        homePage.loginSuccessful();
         if (loginSuccessful) 
             scenarioManager.log("Usuario: "+globalVariables.getUserName()+", password: "+globalVariables.getPassword());
         
@@ -43,7 +43,7 @@ public class OppenAccountStepsDefinition extends BaseSteps{
 
     @Then("De lo contrario, se crea un nuevo usuario {string}")
     public void De_lo_contrario_se_crea_un_nuevo_usuario(String typeUser) throws InterruptedException {
-        if (!loginSuccessful) {
+        if (!homePage.loginSuccessful()) {
             homePage.clickButtonRegister();
             registerPage.newAccountRegistrationForm(typeUser);
             registerPage.clickButtonRegisterNewAccount();
@@ -59,14 +59,13 @@ public class OppenAccountStepsDefinition extends BaseSteps{
     @When("El usuario hace click en el boton Open New Account")
     public void El_usuario_hace_click_en_el_boton_Open_New_Account() throws InterruptedException {
         openAccount.clicOpenNewAccount();
-        takeScreenshot();
+        
         
     }
 
     @When("Se verifica que se despliegue el formulario de creacion de cuenta")
     public void Se_verifica_que_se_despliegue_el_formulario_de_creacion_de_cuenta() throws InterruptedException {
         openAccount.verifyOpenAccountForm();
-        takeScreenshot();
     }
 
  
@@ -86,9 +85,9 @@ public class OppenAccountStepsDefinition extends BaseSteps{
 
     @Then("Se verifica que el sistema muestre el mensaje Account Opened!")
     public void Se_verifica_que_el_sistema_muestre_el_mensaje_Account_Opened() throws InterruptedException {
-        takeScreenshot();
-        Assert.assertTrue(openAccount.verifyMessageAccountOpened(), "El sistema no muestra el mensaje Account Opened!");
         
+        Assert.assertTrue(openAccount.verifyMessageAccountOpened(), "El sistema no muestra el mensaje Account Opened!");
+        takeScreenshot();
     }
 
 
@@ -98,5 +97,7 @@ public class OppenAccountStepsDefinition extends BaseSteps{
         scenarioManager.log("Numero de cuenta: "+openAccount.getAccount(typeAccount));
         
     }
+
+
     
 }

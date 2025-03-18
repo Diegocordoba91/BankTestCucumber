@@ -1,8 +1,11 @@
 pages\BasePage.class
 pages\OpenAccountPage.class
+pages\TransferFoundsPage.class
 pages\HomePage.class
 models\User.class
 utilities\GlobalVariables.class
 pages\RegisterPage.class
 utilities\ScreenShotUtil.class
+pages\AccountOverviewPage.class
 pages\BasePage$SelectionType.class
+models\Accounts.class

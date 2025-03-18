@@ -12,6 +12,7 @@ utilities\BrowserManager.class
 utilities\RequestManager.class
 apis\customer\CustomerRequest.class
 steps\ui\LoginStepDefinition.class
+steps\ui\TransferFoundsStepDefinitions.class
 hooks\Hooks.class
 utilities\Logs.class
 utilities\RequestFilter.class

@@ -14,7 +14,6 @@ public class OpenAccountPage extends BasePage{
 
     private final By openNewAccount = By.xpath("//ul/li/a[text()='Open New Account']");
     private final By accountsOverview = By.xpath("//ul/li/a[text()='Accounts Overview']");
-    private final By transferFunds = By.xpath("//ul/li/a[text()='Transfer Funds']");
     private final By billPay = By.xpath("//ul/li/a[text()='Bill Pay']");
     private final By findTransactions = By.xpath("//ul/li/a[text()='Find Transactions']");
     private final By updateContactInfo = By.xpath("//ul/li/a[text()='Update Contact Info']");
@@ -22,7 +21,7 @@ public class OpenAccountPage extends BasePage{
     private final By logout = By.xpath("//ul/li/a[text()='Log Out']");
     private final By buttonOpenNewAccount = By.cssSelector("input[value=\"Open New Account\"]");
     private final By messageAccountOpened = By.xpath("//h1[@class=\"title\" and contains(text(),'Account Opened!')]");
-    private final By selectTypeAccount = By.id("type");
+    private final By selectTypeAccount = By.cssSelector("select[id=\"type\"]");
     private final By numberAccount = By.id("newAccountId");
     private final By openAccountForm = By.id("openAccountForm");
     
@@ -36,7 +35,8 @@ public class OpenAccountPage extends BasePage{
     }
 
     public void selectAccount(String account) throws InterruptedException{
-        this.selectionDropdownItem(selectTypeAccount, SelectionType.TEXT, account);
+     this.selectionDropdownItem(selectTypeAccount, SelectionType.TEXT, account);
+        
     }
 
     public boolean verifyCreateAccount() throws InterruptedException{
@@ -84,7 +84,9 @@ public class OpenAccountPage extends BasePage{
             default: 
              throw new IllegalArgumentException("Tipo de cuenta invalida: "+typeAccount);       
         }
-    }    
+    }
+    
+
     
 
 

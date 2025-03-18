@@ -1,7 +1,10 @@
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\pages\HomePage.java
+C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\pages\AccountOverviewPage.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\pages\RegisterPage.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\pages\BasePage.java
+C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\models\Accounts.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\models\User.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\pages\OpenAccountPage.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\utilities\GlobalVariables.java
 C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\utilities\ScreenShotUtil.java
+C:\Users\diego\Documents\1. Automation\projectbanktest\src\main\java\pages\TransferFoundsPage.java
