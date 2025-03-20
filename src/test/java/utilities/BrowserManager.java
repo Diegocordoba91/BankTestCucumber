@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.epam.healenium.SelfHealingDriver;
+
 
 import groovyjarjarantlr4.v4.parse.ANTLRParser.ruleReturns_return;
 import io.github.bonigarcia.wdm.WebDriverManager;

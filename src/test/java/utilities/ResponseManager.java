@@ -1,7 +1,9 @@
 package utilities;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.ResponseCache;
+import java.util.List;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -9,9 +11,13 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.jupiter.api.Assertions;
 
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
+import groovy.xml.XmlParser;
 import io.cucumber.java.Scenario;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
+import models.ListAccounts;
 
 public class ResponseManager {
 
@@ -91,9 +97,22 @@ public class ResponseManager {
 
         return finalPath;
 
-    }    
+    }
+    
+    public static <T>T htmlParser(Class<T> clazz){
 
+        
+        try {
+            String xmlResponse = response.getBody().asString();
 
+            XmlMapper xmlMapper = new XmlMapper();
+            return xmlMapper.readValue(xmlResponse, clazz);
+            
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 
     
     

@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.epam.healenium.SelfHealingDriver;
+
 
 import models.Accounts;
 
@@ -25,7 +25,7 @@ public class TransferFoundsPage extends BasePage {
     private final By transferFunds = By.xpath("//ul/li/a[text()='Transfer Funds']");
     private final By transferFormApp = By.id("transferApp");
     private final By inputAmount = By.id("amount");
-    private final By selectFromAccount = By.id("fromAccountId");
+    private final By selectFromAccount = By.cssSelector("select#fromAccountId");
     private final By selectToAccount = By.id("toAccountId");
     private final By buttonTransfer = By.cssSelector("input[type=\"submit\"]");
     private final By messageTransferComplete = By.xpath("//h1[@class=\"title\" and contains(text(),'Complete')]");
@@ -52,7 +52,7 @@ public class TransferFoundsPage extends BasePage {
 
         int numberAccount = globalVariables.getAccounts().get(random.nextInt(globalVariables.getAccounts().size())).accountNumber();
 
-        this.selectionDropdownItem(selectFromAccount, SelectionDropdown.TEXT, String.valueOf(numberAccount));
+        this.selectionDropdownItem(selectFromAccount, SelectionDropdown.TEXT, Integer.toString(numberAccount));
 
         
 
@@ -61,7 +61,7 @@ public class TransferFoundsPage extends BasePage {
     public void selectToAccount(){
         int numberAccount = globalVariables.getAccounts().get(random.nextInt(globalVariables.getAccounts().size())).accountNumber();
 
-        this.selectionDropdownItem(selectToAccount, SelectionDropdown.TEXT, String.valueOf(numberAccount));
+        this.selectionDropdownItem(selectToAccount, SelectionDropdown.TEXT, Integer.toString(numberAccount));
 
     }
 
@@ -93,10 +93,10 @@ public class TransferFoundsPage extends BasePage {
 
     public String verifySelectsPresents(){
 
-        List<WebElement> list = this.driver.findElements(By.tagName("select"));
+        List<WebElement> list = this.driver.findElements(By.tagName("option"));
         String result="";
         for (WebElement webElement : list){
-                result += "\n"+webElement.getDomAttribute("id");
+                result += "\n"+webElement.getDomAttribute("value");
         } 
 
         return result;

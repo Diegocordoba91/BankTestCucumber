@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.cucumber.junit.platform.engine.CucumberTestEngine
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 47.88 s <<< FAILURE! -- in io.cucumber.junit.platform.engine.CucumberTestEngine
-Transfer founds.Transfer founds - Transferencia exitosa de fondos a una cuenta propia -- Time elapsed: 35.27 s <<< ERROR!
-java.lang.RuntimeException: El localizador By.id: fromAccountId no se encuentra visible
-	at pages.BasePage.selectionDropdownItem(BasePage.java:168)
-	at pages.TransferFoundsPage.selectFromAccount(TransferFoundsPage.java:55)
-	at steps.ui.TransferFoundsStepDefinitions.El_usuario_selecciona_la_cuenta_origen(TransferFoundsStepDefinitions.java:42)
-	at ✽.El usuario selecciona la cuenta origen(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/1_ui/3_TransferFounds.feature:16)
-
-Transfer founds.Transfer founds - Transfrencia fallida de fondos a una cuenta propia -- Time elapsed: 12.33 s <<< ERROR!
-java.lang.RuntimeException: El localizador By.id: fromAccountId no se encuentra visible
-	at pages.BasePage.selectionDropdownItem(BasePage.java:168)
-	at pages.TransferFoundsPage.selectFromAccount(TransferFoundsPage.java:55)
-	at steps.ui.TransferFoundsStepDefinitions.El_usuario_selecciona_la_cuenta_origen(TransferFoundsStepDefinitions.java:42)
-	at ✽.El usuario selecciona la cuenta origen(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/1_ui/3_TransferFounds.feature:26)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.14 s -- in io.cucumber.junit.platform.engine.CucumberTestEngine

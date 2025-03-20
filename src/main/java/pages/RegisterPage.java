@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.epam.healenium.SelfHealingDriver;
+
 import com.github.javafaker.Faker;
 
 import io.cucumber.java.it.Ma;

@@ -8,7 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
-import com.epam.healenium.SelfHealingDriver;
 
 import hooks.Hooks;
 import io.cucumber.java.Scenario;

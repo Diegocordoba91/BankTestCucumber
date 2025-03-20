@@ -140,12 +140,13 @@
             <version>5.9.3</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
         <dependency>
-            <groupId>com.epam.healenium</groupId>
-            <artifactId>healenium-web</artifactId>
-            <version>3.5.4</version>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.18.3</version>
         </dependency>
+
 
 
 

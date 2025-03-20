@@ -4,7 +4,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class BaseRequest {
 
-
+    protected final ScenarioManager scenarioManager = ScenarioManager.getScenarioManager();
+    protected final GlobalVariables globalVariables = GlobalVariables.getInstance();
     
 
     protected RequestSpecification getRequest(){// 1. Crea un método protegido para obtener la especificación de la solicitud

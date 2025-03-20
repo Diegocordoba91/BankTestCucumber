@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.epam.healenium.SelfHealingDriver;
+
 
 import models.Accounts;
 import utilities.GlobalVariables;
@@ -40,6 +40,7 @@ public class AccountOverviewPage extends BasePage{
         for (List<String> row : table) {
             if (!row.get(0).equals("Total")) {
                 Accounts account = new Accounts(
+                    null,
                     Integer.parseInt(row.get(0).trim()), 
                     Double.parseDouble(row.get(1).replace("$", "")), 
                     Double.parseDouble(row.get(2).replace("$", "")), 

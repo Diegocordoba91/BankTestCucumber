@@ -8,17 +8,18 @@ Feature: Transfer founds
         And De lo contrario, se crea un nuevo usuario "VALIDO"
         And Se obtienen las cuentas del usuario
     
-    @OPEN
+    @smoke
     Scenario: Transferencia exitosa de fondos a una cuenta propia
         When El usuario hace clic en el boton Transfer founds
         And Se verifica que el se visualice en pantalla el formlario de transferencia de fondos
         And El usuario ingresa la cantidad a transferir "100"
         And El usuario selecciona la cuenta origen
+        And Se verifica los fondos de la cuena de origen
         And El usuario selecciona la cuenta destino
         And El usuario hace clic en el boton Transfer
         Then Se visualiza en pantalla el mensaje Transfer Complete!
 
-    @OPEN
+    @smoke
     Scenario: Transfrencia fallida de fondos a una cuenta propia
         When El usuario hace clic en el boton Transfer founds
         And Se verifica que el se visualice en pantalla el formlario de transferencia de fondos

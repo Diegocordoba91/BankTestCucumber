@@ -17,4 +17,8 @@ public class CommonStepDefinitionsApi {
         ResponseManager.verifyStatusCode(expectedStatusCode);
         scenarioManager.log("✅ Response Body: " + ResponseManager.toStringBodyResponse());
     }
+
+
+
+
 }

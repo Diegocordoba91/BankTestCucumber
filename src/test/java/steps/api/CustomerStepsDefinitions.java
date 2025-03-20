@@ -21,9 +21,7 @@ public class CustomerStepsDefinitions{
     final ScenarioManager scenarioManager = ScenarioManager.getScenarioManager();
 
 
-
-
-
+    
     @Given("Se obtiene el userName y password")
     public void getUserNamePassword() {
 
@@ -47,10 +45,13 @@ public class CustomerStepsDefinitions{
         );
     }
 
+    @Then("Se captura el id del usuario")
+    public void setIdUser() {
+        customerRequest.setIdUser();
+    }
 
 
 
-
-
+    
     
 }

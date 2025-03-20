@@ -1,1 +1,1 @@
-./mvnw clean test -Dgroups="OPEN"
+./mvnw clean test -Dgroups="API"

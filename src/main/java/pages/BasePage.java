@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.epam.healenium.SelfHealingDriver;
+
 
 import io.cucumber.java.lu.a;
 import utilities.GlobalVariables;
@@ -137,24 +137,28 @@ public class BasePage {
 
     }
 
+ 
     protected void selectionDropdownItem (By locator,  SelectionDropdown selectionType , String selectectionValue){
         
-        //waitForPageToLoad();
+        waitForPageToLoad();
         
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("option")));
         WebElement element = driver.findElement(locator);
         Select select = new Select(element);
+
+        
         try {            
             switch (selectionType) {
                 case TEXT:
-                    select.selectByVisibleText(selectectionValue);
+                    select.selectByVisibleText(selectectionValue.trim());
                     break;
                 case VALUE:
-                    select.selectByValue(selectectionValue);    
+                    select.selectByValue(selectectionValue.trim());    
                     break;
                 case INDEX:
                     try {
-                        int index = Integer.parseInt(selectectionValue);
+                        int index = Integer.parseInt(selectectionValue.trim());
                         select.selectByIndex(index);
                     } catch (Exception e) {
                         System.out.println("Error: para la opción index, debe ingresar un número");
@@ -165,11 +169,17 @@ public class BasePage {
             }
             
         } catch (Exception e) {
-            throw new RuntimeException("El localizador "+locator+" no se encuentra visible");
+            throw new RuntimeException("Error in select item : "+e);
         }
 
         
     }
+
+
+
+
+
+    
 
     public void takeScreenshot(String fileName) {
 

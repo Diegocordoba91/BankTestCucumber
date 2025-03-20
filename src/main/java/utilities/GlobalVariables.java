@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import models.Accounts;
+import models.ListAccounts;
 
 
 
@@ -19,8 +20,10 @@ public class GlobalVariables {
     private int newAccountSaving;
     private int newAccountChecking;
     private ArrayList<Accounts> accounts = new ArrayList<>();
+    private ListAccounts accountsApi;
 
     
+
 
     private GlobalVariables() {}
 
@@ -102,6 +105,15 @@ public class GlobalVariables {
 
     public List<Accounts> getAccounts(){
         return accounts;
+    }
+
+    
+    public ListAccounts getAccountsApi() {
+        return accountsApi;
+    }
+
+    public void setAccountsApi(ListAccounts accountsApi) {
+        this.accountsApi = accountsApi;
     }
 
 
