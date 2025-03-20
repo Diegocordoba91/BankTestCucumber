@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.epam.healenium.SelfHealingDriver;
+
 import net.bytebuddy.agent.builder.AgentBuilder.CircularityLock.Global;
 import utilities.GlobalVariables;
 
@@ -25,9 +27,8 @@ public class OpenAccountPage extends BasePage{
     private final By numberAccount = By.id("newAccountId");
     private final By openAccountForm = By.id("openAccountForm");
     
-    public OpenAccountPage(WebDriver driver, WebDriverWait wait, Actions actions) {
-        super(driver, wait, actions);
-        //TODO Auto-generated constructor stub
+    public OpenAccountPage(WebDriver driver) {
+        super(driver);
     }
 
     public void clicOpenNewAccount() throws InterruptedException{
@@ -35,7 +36,7 @@ public class OpenAccountPage extends BasePage{
     }
 
     public void selectAccount(String account) throws InterruptedException{
-     this.selectionDropdownItem(selectTypeAccount, SelectionType.TEXT, account);
+     this.selectionDropdownItem(selectTypeAccount, SelectionDropdown.TEXT, account);
         
     }
 

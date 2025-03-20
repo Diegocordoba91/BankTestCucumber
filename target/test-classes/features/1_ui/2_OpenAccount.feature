@@ -10,7 +10,7 @@ Feature: Open new account
         And De lo contrario, se crea un nuevo usuario "VALIDO"
  
 
-    @OPEN
+    
     Scenario: Open new saving account
         When El usuario hace click en el boton Open New Account
         And Se verifica que se despliegue el formulario de creacion de cuenta
@@ -19,7 +19,7 @@ Feature: Open new account
         Then Se verifica que el sistema muestre el mensaje Account Opened!
         And Se captura el numero de cuenta "CHECKING" creado para futuras validaciones
 
-    @OPEN
+    
     Scenario: Open new checking account
         When El usuario hace click en el boton Open New Account
         And Se verifica que se despliegue el formulario de creacion de cuenta

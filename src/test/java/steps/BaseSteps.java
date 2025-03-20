@@ -6,7 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
+import com.epam.healenium.SelfHealingDriver;
 
 import hooks.Hooks;
 import io.cucumber.java.Scenario;
@@ -28,14 +30,15 @@ public class BaseSteps{
     private Actions actions;
     
 
-    protected BasePage basePage = new BasePage(driver, wait, actions);
-    protected HomePage homePage = new HomePage(driver, wait, actions);
-    protected RegisterPage registerPage = new RegisterPage(driver, wait, actions);
+    protected BasePage basePage = new BasePage(driver);
+    protected HomePage homePage = new HomePage(driver);
+    protected RegisterPage registerPage = new RegisterPage(driver);
     protected ScenarioManager scenarioManager = ScenarioManager.getScenarioManager();
-    protected OpenAccountPage openAccount = new OpenAccountPage(driver, wait, actions);
+    protected OpenAccountPage openAccount = new OpenAccountPage(driver);
     protected GlobalVariables globalVariables = GlobalVariables.getInstance();
-    protected TransferFoundsPage transferFoundsPage = new TransferFoundsPage(driver, wait, actions);
-    protected AccountOverviewPage accountOverviewPage = new AccountOverviewPage(driver, wait, actions);
+    protected TransferFoundsPage transferFoundsPage = new TransferFoundsPage(driver);
+    protected AccountOverviewPage accountOverviewPage = new AccountOverviewPage(driver);
+    protected SoftAssert softAssert = new SoftAssert(); 
     
     public void takeScreenshot(){
         scenarioManager.takesScreenshot(driver, "STEPS");

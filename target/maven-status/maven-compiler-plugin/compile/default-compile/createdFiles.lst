@@ -3,9 +3,9 @@ pages\OpenAccountPage.class
 pages\TransferFoundsPage.class
 pages\HomePage.class
 models\User.class
+pages\BasePage$SelectionDropdown.class
 utilities\GlobalVariables.class
 pages\RegisterPage.class
 utilities\ScreenShotUtil.class
 pages\AccountOverviewPage.class
-pages\BasePage$SelectionType.class
 models\Accounts.class

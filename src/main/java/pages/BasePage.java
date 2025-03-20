@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.epam.healenium.SelfHealingDriver;
+
 import io.cucumber.java.lu.a;
 import utilities.GlobalVariables;
 import utilities.ScreenShotUtil;
@@ -31,10 +33,8 @@ public class BasePage {
 
     
 
-    public BasePage(WebDriver driver, WebDriverWait wait, Actions actions) {
+    public BasePage(WebDriver driver) {
         
-        
-
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         this.actions = new Actions(driver);
@@ -130,17 +130,18 @@ public class BasePage {
     }
 
 
-    protected enum SelectionType {
+    protected enum SelectionDropdown {
         TEXT,
         VALUE,
         INDEX
 
     }
 
-    protected void selectionDropdownItem (By locator,  SelectionType selectionType , String selectectionValue){
+    protected void selectionDropdownItem (By locator,  SelectionDropdown selectionType , String selectectionValue){
         
-        waitForPageToLoad();
-        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        //waitForPageToLoad();
+        
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         WebElement element = driver.findElement(locator);
         Select select = new Select(element);
         try {            
@@ -158,6 +159,7 @@ public class BasePage {
                     } catch (Exception e) {
                         System.out.println("Error: para la opción index, debe ingresar un número");
                     }
+                    break;
                 default:
                     throw new IllegalArgumentException("Opción de selección no válida: " + selectionType);
             }

@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.epam.healenium.SelfHealingDriver;
 import com.github.javafaker.Faker;
 
 import io.cucumber.java.it.Ma;
@@ -21,6 +22,11 @@ import utilities.GlobalVariables;
 
 
 public class RegisterPage extends BasePage{
+
+    public RegisterPage(WebDriver driver) {
+        super(driver);
+        //TODO Auto-generated constructor stub
+    }
 
     //utilities
     private final Faker faker = new Faker();
@@ -71,10 +77,7 @@ public class RegisterPage extends BasePage{
 
 
     
-    public RegisterPage(WebDriver driver, WebDriverWait wait, Actions actions) {
-        super(driver, wait, actions);
-        //TODO Auto-generated constructor stub
-    }
+
 
     public boolean titleRegisterPagePresensent() throws InterruptedException{
 

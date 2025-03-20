@@ -140,6 +140,14 @@
             <version>5.9.3</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
+        <dependency>
+            <groupId>com.epam.healenium</groupId>
+            <artifactId>healenium-web</artifactId>
+            <version>3.5.4</version>
+        </dependency>
+
+
 
 
  

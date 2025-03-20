@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.epam.healenium.SelfHealingDriver;
+
 import models.Accounts;
 import utilities.GlobalVariables;
 
@@ -18,9 +20,10 @@ public class AccountOverviewPage extends BasePage{
     private final By accountsOverview = By.xpath("//ul/li/a[text()='Accounts Overview']");
     private final By tableAccount = By.id("accountTable");
     
-    public AccountOverviewPage(WebDriver driver, WebDriverWait wait, Actions actions) {
-        super(driver, wait, actions);
-        //TODO Auto-generated constructor stub
+
+
+    public AccountOverviewPage(WebDriver driver) {
+        super(driver);
     }
 
     public void clickButtonAccountsOverview() throws InterruptedException{

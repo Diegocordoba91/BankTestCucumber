@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.epam.healenium.SelfHealingDriver;
+
 import utilities.GlobalVariables;
 
 public class HomePage extends BasePage {
@@ -19,12 +21,10 @@ public class HomePage extends BasePage {
     private By errorMessage = By.xpath("//h1[@class=\"title\" and (text()='Error!')]");
     private By messageLoginSuccessful = By.id("showOverview");
 
-
-
-    public HomePage(WebDriver driver, WebDriverWait wait, Actions actions) {
-        super(driver, wait, actions);
-        //TODO Auto-generated constructor stub
+    public HomePage(WebDriver driver) {
+        super(driver);
     }
+
 
     public String getTitleHomePage() throws InterruptedException{
         return this.getTitle();
