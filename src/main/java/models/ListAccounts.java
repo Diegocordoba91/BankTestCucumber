@@ -2,13 +2,15 @@ package models;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
+@JacksonXmlRootElement(localName = "accounts")
 public record ListAccounts(
     @JacksonXmlElementWrapper(useWrapping = false)
-    @JsonProperty("account")
-    List<Accounts> accounts 
+    List<Account> account
     ) 
     {
     

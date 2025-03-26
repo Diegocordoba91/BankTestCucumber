@@ -15,7 +15,12 @@ public class CommonStepDefinitionsApi {
     @Then("Se verifica el status code {int}")
     public void verifyStatusCode(Integer expectedStatusCode) {
         ResponseManager.verifyStatusCode(expectedStatusCode);
-        scenarioManager.log("✅ Response Body: " + ResponseManager.toStringBodyResponse());
+        scenarioManager.log(ResponseManager.toStringBodyResponse());
+    }
+
+    @Then("Se verific que el time response sea menor a {int}")
+    public void verifyTimeResponse(Integer expectedTimeResponse){
+        ResponseManager.verifyTime(expectedTimeResponse);
     }
 
 

@@ -1,10 +1,10 @@
 package models;
 
-import org.openqa.selenium.devtools.v131.fedcm.model.Account;
+
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
-public record Accounts(
+public record Account(
     @JacksonXmlProperty(localName = "customerId")
     Integer customerId,
     @JacksonXmlProperty(localName = "id")

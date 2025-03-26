@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-import models.Accounts;
+import models.Account;
 import utilities.GlobalVariables;
 
 
@@ -39,7 +39,7 @@ public class AccountOverviewPage extends BasePage{
 
         for (List<String> row : table) {
             if (!row.get(0).equals("Total")) {
-                Accounts account = new Accounts(
+                Account account = new Account(
                     null,
                     Integer.parseInt(row.get(0).trim()), 
                     Double.parseDouble(row.get(1).replace("$", "")), 

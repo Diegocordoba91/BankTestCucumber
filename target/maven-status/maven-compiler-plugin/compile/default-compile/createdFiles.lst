@@ -7,6 +7,6 @@ pages\BasePage$SelectionDropdown.class
 utilities\GlobalVariables.class
 pages\RegisterPage.class
 utilities\ScreenShotUtil.class
+models\Account.class
 models\ListAccounts.class
 pages\AccountOverviewPage.class
-models\Accounts.class

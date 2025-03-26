@@ -29,11 +29,12 @@ public class CustomerStepsDefinitions{
 
 
 
-    @When("Se llama el request de customer")
-    public void getCustomerApi() {
-        customerRequest.getCustomer(globalVariables.getUserName(), globalVariables.getPassword());
-        
+
+    @When("Se llama el request de customer con usuario {string}")
+    public void Se_llama_el_request_de_customer_con_usuario(String typeUser) {
+        customerRequest.getCustomer(typeUser);
     }
+
 
     
     @Then("Se verifica el name y lastName del usuario")
@@ -49,6 +50,7 @@ public class CustomerStepsDefinitions{
     public void setIdUser() {
         customerRequest.setIdUser();
     }
+
 
 
 

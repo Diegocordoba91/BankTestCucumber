@@ -64,11 +64,13 @@ public class LoginStepDefinition extends BaseSteps{
     @Then("Se verifica que el usuario visualice en pantalla el mensaje {string}")
     public void El_usuario_visualiza_en_pantalla_el_mensaje(String message) {
         Assert.assertEquals(registerPage.getMessageAccountSuccefull(), message);
+        takeScreenshot();
     }
 
     @Then("Se verifica que el usuario visualice en pantalla el mensaje Is Required en todos los campos")
     public void El_usuario_visualiza_en_pantalla_el_mensaje_Is_Required_en_todos_los_campos() throws InterruptedException {
         registerPage.verifyMesaagesIsRequired();
+        takeScreenshot();
         var result = registerPage.verifyMesaagesIsRequired();
         scenarioManager.log(result.get("result").toString());
         scenarioManager.log(result.get("elements").toString());

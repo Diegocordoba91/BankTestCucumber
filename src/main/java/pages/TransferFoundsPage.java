@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-import models.Accounts;
+import models.Account;
 
 public class TransferFoundsPage extends BasePage {
 
@@ -73,7 +73,7 @@ public class TransferFoundsPage extends BasePage {
         return this.elementDispaleyed(messageTransferComplete);
     }
 
-    public Optional<Accounts> getBalanceSelectedAccountFrom() throws InterruptedException {
+    public Optional<Account> getBalanceSelectedAccountFrom() throws InterruptedException {
 
         int numberAccount = Integer.parseInt(this.getTextElement(selectedAccountFrom));
         

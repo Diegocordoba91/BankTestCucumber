@@ -3,7 +3,7 @@ package utilities;
 import java.util.ArrayList;
 import java.util.List;
 
-import models.Accounts;
+import models.Account;
 import models.ListAccounts;
 
 
@@ -19,7 +19,7 @@ public class GlobalVariables {
     private int idUser;
     private int newAccountSaving;
     private int newAccountChecking;
-    private ArrayList<Accounts> accounts = new ArrayList<>();
+    private ArrayList<Account> accounts = new ArrayList<>();
     private ListAccounts accountsApi;
 
     
@@ -99,11 +99,11 @@ public class GlobalVariables {
         this.newAccountChecking = newAccountChecking;
     }
 
-    public void setAccount(Accounts account){
+    public void setAccount(Account account){
         accounts.add(account);
     }
 
-    public List<Accounts> getAccounts(){
+    public List<Account> getAccounts(){
         return accounts;
     }
 
