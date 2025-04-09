@@ -92,6 +92,11 @@ public class ResponseManager {
     public static void setResponse(Response response){//Asigna el response obtenido de la petición al response del ResponseManager
         ResponseManager.response = response;
     }
+    
+    public static String toStringRequest(){
+        final String requestMethodURL = String.format("(%s) \t %s", requestSpec.getMethod(), requestSpec.getURI());
+        return requestMethodURL;
+    }
 
     public static String toStringBodyResponse(){
 

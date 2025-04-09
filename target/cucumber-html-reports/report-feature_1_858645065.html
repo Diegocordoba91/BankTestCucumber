@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>API Test Diego Cordoba</td>
         <td>1</td>
-      <td>26 mar 2025, 11:45</td>
+      <td>09 abr 2025, 09:54</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Customer API</td>
-          <td      class="passed"    >6</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >3</td>
+          <td     class="skipped"   >7</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">6</td>
+          <td class="total">11</td>
 
-          <td  class="passed"    >2</td>
           <td >0</td>
-          <td class="total">2</td>
+          <td  class="failed"    >3</td>
+          <td class="total">3</td>
 
-          <td class="duration" data-value="1924384900">1.924</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="2185901200">2.185</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Customer API</span>
 
@@ -197,12 +197,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.339</span>
+  <span class="lead-duration duration">1.201</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">consulta el detalle de un cliente por userName y password</span>
 
@@ -213,7 +213,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -235,7 +235,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">hooks.Hooks.setupApi(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -252,9 +252,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -264,15 +264,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">Se llama el request de customer con usuario <span class="argument">&quot;Correcto&quot;</span></span>
 
-  <span class="lead-duration duration">1.257</span>
+  <span class="lead-duration duration">1.201</span>
 
 </div>
 
@@ -281,94 +281,40 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.NullPointerException:</a>
       </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Se verifica el status code <span class="argument">200</span></span>
-
-  <span class="lead-duration duration">0.006</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-4" class="collapse collapsable-details " >
-          
-          <pre><p>📌 
-=============================================
-Response
-=============================================
-Status Code: 200
-Response Headers:
-	Date: Wed, 26 Mar 2025 16:45:47 GMT
-	Content-Type: application/xml
-	Transfer-Encoding: chunked
-	Connection: keep-alive
-	cf-cache-status: DYNAMIC
-	X-Content-Type-Options: nosniff
-	Server: cloudflare
-	CF-RAY: 92681ed6582087d6-MIA
-	Content-Encoding: gzip
-
-Response Body:
-&lt;customer&gt;
-  &lt;id&gt;12434&lt;/id&gt;
-  &lt;firstName&gt;Thresa&lt;/firstName&gt;
-  &lt;lastName&gt;Raynor&lt;/lastName&gt;
-  &lt;address&gt;
-    &lt;street&gt;6926 Elroy Road, Rigobertoville, RI 96602&lt;/street&gt;
-    &lt;city&gt;Cherymouth&lt;/city&gt;
-    &lt;state&gt;Iowa&lt;/state&gt;
-    &lt;zipCode&gt;208442&lt;/zipCode&gt;
-  &lt;/address&gt;
-  &lt;phoneNumber&gt;978.288.1305 x0053&lt;/phoneNumber&gt;
-  &lt;ssn&gt;664-90-2277&lt;/ssn&gt;
-&lt;/customer&gt;
-</p></pre>
-        </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException: Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null
+	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
+	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
+	at ✽.Se llama el request de customer con usuario &quot;Correcto&quot;(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:6)
+</pre>
       </div>
+    </div>
   </div>
 
 
 
 
 
+
+
+
+
+
+
       </div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Se verifica el name y lastName del usuario</span>
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Se verifica el status code <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.075</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -391,11 +337,38 @@ Response Body:
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Se verifica el name y lastName del usuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Se captura el id del usuario</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -456,7 +429,7 @@ Response Body:
         </div>
         <div id="output-6" class="collapse collapsable-details " >
           
-          <pre><p>📌 ✅ Scenario finished: PASSED</p></pre>
+          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
         </div>
       </div>
   </div>
@@ -481,12 +454,12 @@ Response Body:
 </div>
 
 
-  <span class="lead-duration duration">0.584</span>
+  <span class="lead-duration duration">0.570</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">consulta el detalle de un cliente por userName y password incorrecto</span>
 
@@ -497,7 +470,7 @@ Response Body:
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -536,9 +509,9 @@ Response Body:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -548,15 +521,15 @@ Response Body:
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">Se llama el request de customer con usuario <span class="argument">&quot;Incorrecto&quot;</span></span>
 
-  <span class="lead-duration duration">0.583</span>
+  <span class="lead-duration duration">0.570</span>
 
 </div>
 
@@ -564,6 +537,21 @@ Response Body:
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>java.lang.NullPointerException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException: Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null
+	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
+	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
+	at ✽.Se llama el request de customer con usuario &quot;Incorrecto&quot;(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:13)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -579,11 +567,11 @@ Response Body:
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Se verifica el status code <span class="argument">400</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -597,35 +585,6 @@ Response Body:
 
 
 
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-10">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-10" class="collapse collapsable-details " >
-          
-          <pre><p>📌 
-=============================================
-Response
-=============================================
-Status Code: 400
-Response Headers:
-	Date: Wed, 26 Mar 2025 16:45:48 GMT
-	Content-Type: text/plain;charset=UTF-8
-	Content-Length: 32
-	Connection: keep-alive
-	cf-cache-status: DYNAMIC
-	X-Content-Type-Options: nosniff
-	Server: cloudflare
-	CF-RAY: 92681eda9ae6978c-MIA
-
-Response Body:
-Invalid username and/or password
-</p></pre>
-        </div>
-      </div>
-  </div>
 
 
 
@@ -673,7 +632,303 @@ Invalid username and/or password
         </div>
         <div id="output-12" class="collapse collapsable-details " >
           
-          <pre><p>📌 ✅ Scenario finished: PASSED</p></pre>
+          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149455289.html">@API</a>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_2149455289.html">@API</a>
+</div>
+
+
+  <span class="lead-duration duration">0.413</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">consulta de detalle de customer por id</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">hooks.Hooks.setupApi(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Se obtiene el id del usuario</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-16">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-16" class="collapse collapsable-details " >
+          
+          <pre><p>📌 Id del usuario: 0</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">Se llama el request de customer por id</span>
+
+  <span class="lead-duration duration">0.411</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>java.lang.NullPointerException:</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException: Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null
+	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
+	at steps.api.CustomerStepsDefinitions.getCustomerById(CustomerStepsDefinitions.java:66)
+	at ✽.Se llama el request de customer por id(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:19)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Se verifica el status code <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Se verifica el name y lastName del usuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Se captura el id del usuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-18" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">hooks.Hooks.tearDownApi(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-19">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-19" class="collapse collapsable-details " >
+          
+          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
         </div>
       </div>
   </div>

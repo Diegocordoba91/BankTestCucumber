@@ -16,7 +16,20 @@ public class RequestManager {
         
         Logs.debug("Guardando el request en el RequestProvider");
         new RequestProvider().set(request);//Esta código asigna el request a la variable threadLocal de la clase RequestProvider
+
+        
     }
+
+        /* 
+         *  public String toStringRequest(){
+        final var requesSpect = RequestProvider.get();
+        final var request = String.format("(/s)" /t "/s", requesSpect.getUri());
+        return 
+    }
+
+        */
+   
+ 
 
     
     public RequestSpecification buildRequestSpec(){
@@ -27,6 +40,10 @@ public class RequestManager {
         .setContentType(ContentType.JSON) // 3. Establece el tipo de contenido de la solicitud en JSON
         .build(); // 4. Construye y devuelve la especificación de la solicitud
     }
+
+
+
+    
 
 
 

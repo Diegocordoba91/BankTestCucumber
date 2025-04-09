@@ -1,4 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: io.cucumber.junit.platform.engine.CucumberTestEngine
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.47 s -- in io.cucumber.junit.platform.engine.CucumberTestEngine
+Tests run: 6, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 20.43 s <<< FAILURE! -- in io.cucumber.junit.platform.engine.CucumberTestEngine
+Customer API.Customer API - consulta el detalle de un cliente por userName y password -- Time elapsed: 1.224 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
+	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
+	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
+	at ✽.Se llama el request de customer con usuario "Correcto"(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:6)
+
+Customer API.Customer API - consulta el detalle de un cliente por userName y password incorrecto -- Time elapsed: 0.580 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
+	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
+	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
+	at ✽.Se llama el request de customer con usuario "Incorrecto"(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:13)
+
+Customer API.Customer API - consulta de detalle de customer por id -- Time elapsed: 0.420 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
+	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
+	at steps.api.CustomerStepsDefinitions.getCustomerById(CustomerStepsDefinitions.java:66)
+	at ✽.Se llama el request de customer por id(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:19)
+
+Accounts API.Accounts API - Get Account Details -- Time elapsed: 0.596 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Status code mismatch ==> expected: <200> but was: <400>
+	at utilities.ResponseManager.verifyStatusCode(ResponseManager.java:45)
+	at steps.api.CommonStepDefinitionsApi.verifyStatusCode(CommonStepDefinitionsApi.java:17)
+	at ✽.Se verifica el status code 200(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:7)
+
+Accounts API.Accounts API - Get transactoins by account -- Time elapsed: 0.008 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "models.ListAccounts.account()" because the return value of "utilities.GlobalVariables.getAccountsApi()" is null
+	at apis.customer.AccountsRequest.getNumberAccount(AccountsRequest.java:51)
+	at steps.api.AccountsStepDefinitionApi.Se_obtiene_el_n_emero_de_cuenta_del_usuario(AccountsStepDefinitionApi.java:42)
+	at ✽.Se obtiene el núemero de cuenta del usuario(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:13)
+

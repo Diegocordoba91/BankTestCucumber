@@ -50,7 +50,6 @@ public class AccountsRequest extends BaseRequest{
 
         return globalVariables.getAccountsApi().account().get(random.nextInt(globalVariables.getAccountsApi().account().size())).accountNumber();
         
-        
     }
 
 

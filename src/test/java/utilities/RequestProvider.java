@@ -10,8 +10,12 @@ public class RequestProvider {
         threadLocal.set(request);
     }
 
-    public RequestSpecification get() {
+    public static RequestSpecification get() {
         return threadLocal.get();
     }
+
+
+
+
     
 }

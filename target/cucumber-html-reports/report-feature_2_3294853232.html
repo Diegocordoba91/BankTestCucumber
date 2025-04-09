@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>API Test Diego Cordoba</td>
         <td>1</td>
-      <td>26 mar 2025, 11:45</td>
+      <td>09 abr 2025, 09:54</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Accounts API</td>
-          <td      class="passed"    >7</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">7</td>
 
-          <td  class="passed"    >2</td>
           <td >0</td>
+          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="1388855200">1.388</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="592085600">0.592</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Accounts API</span>
 
@@ -197,12 +197,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.829</span>
+  <span class="lead-duration duration">0.589</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get Account Details</span>
 
@@ -213,7 +213,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -252,9 +252,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -264,7 +264,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -272,7 +272,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Se llama al request de cuentas del usuario, obteniendo el id del usuario</span>
 
-  <span class="lead-duration duration">0.617</span>
+  <span class="lead-duration duration">0.582</span>
 
 </div>
 
@@ -295,11 +295,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">Se verifica el status code <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -308,6 +308,26 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.opentest4j.AssertionFailedError:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.opentest4j.AssertionFailedError: Status code mismatch ==&gt; expected: &lt;200&gt; but was: &lt;400&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at utilities.ResponseManager.verifyStatusCode(ResponseManager.java:45)
+	at steps.api.CommonStepDefinitionsApi.verifyStatusCode(CommonStepDefinitionsApi.java:17)
+	at ✽.Se verifica el status code 200(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:7)
+</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -315,38 +335,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-5">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-4" class="collapse collapsable-details " >
+        <div id="output-5" class="collapse collapsable-details  in "  aria-expanded="true" >
           
-          <pre><p>📌 
-=============================================
-Response
-=============================================
-Status Code: 200
-Response Headers:
-	Date: Wed, 26 Mar 2025 16:45:49 GMT
-	Content-Type: application/xml
-	Transfer-Encoding: chunked
-	Connection: keep-alive
-	cf-cache-status: DYNAMIC
-	X-Content-Type-Options: nosniff
-	Server: cloudflare
-	CF-RAY: 92681ede78d2afd7-MIA
-	Content-Encoding: gzip
-
-Response Body:
-&lt;accounts&gt;
-  &lt;account&gt;
-    &lt;id&gt;13455&lt;/id&gt;
-    &lt;customerId&gt;12434&lt;/customerId&gt;
-    &lt;type&gt;CHECKING&lt;/type&gt;
-    &lt;balance&gt;515.50&lt;/balance&gt;
-  &lt;/account&gt;
-&lt;/accounts&gt;
-</p></pre>
+          <pre><p>📌 ❌ ERROR: Expected 200, but got: 400</p></pre>
         </div>
       </div>
   </div>
@@ -359,7 +354,7 @@ Response Body:
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Se verifica que el id del response sea el del usuario</span>
 
@@ -386,11 +381,11 @@ Response Body:
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Se almancenan las cuentas del usuario</span>
 
-  <span class="lead-duration duration">0.208</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -404,18 +399,6 @@ Response Body:
 
 
 
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-5">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-5" class="collapse collapsable-details " >
-          
-          <pre><p>📌 Las cuentas almacenadas son: ListAccounts[account=[Account[customerId=12434, accountNumber=13455, balance=515.5, availableAmount=0.0, typeAccount=CHECKING]]]</p></pre>
-        </div>
-      </div>
-  </div>
 
 
 
@@ -463,7 +446,7 @@ Response Body:
         </div>
         <div id="output-7" class="collapse collapsable-details " >
           
-          <pre><p>📌 ✅ Scenario finished: PASSED</p></pre>
+          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
         </div>
       </div>
   </div>
@@ -488,12 +471,12 @@ Response Body:
 </div>
 
 
-  <span class="lead-duration duration">0.559</span>
+  <span class="lead-duration duration">0.002</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Get transactoins by account</span>
 
@@ -504,7 +487,7 @@ Response Body:
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details ">
+  <div id="element-8" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -526,7 +509,7 @@ Response Body:
             <span class="keyword indention">Before</span>
               <span class="location name">hooks.Hooks.setupApi(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -543,9 +526,9 @@ Response Body:
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -555,13 +538,55 @@ Response Body:
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">Se obtiene el n&uacute;emero de cuenta del usuario</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
+          <a>java.lang.NullPointerException:</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException: Cannot invoke &quot;models.ListAccounts.account()&quot; because the return value of &quot;utilities.GlobalVariables.getAccountsApi()&quot; is null
+	at apis.customer.AccountsRequest.getNumberAccount(AccountsRequest.java:51)
+	at steps.api.AccountsStepDefinitionApi.Se_obtiene_el_n_emero_de_cuenta_del_usuario(AccountsStepDefinitionApi.java:42)
+	at ✽.Se obtiene el n&uacute;emero de cuenta del usuario(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:13)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Se llama al request de consulta de transacciones</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -586,38 +611,11 @@ Response Body:
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Se llama al request de consulta de transacciones</span>
-
-  <span class="lead-duration duration">0.557</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Se verifica el status code <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -631,36 +629,6 @@ Response Body:
 
 
 
-  <div class="outputs inner-level">
-      <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-11">
-          Output 1
-          <i class="chevron fa fa-fw"></i>
-        </div>
-        <div id="output-11" class="collapse collapsable-details " >
-          
-          <pre><p>📌 
-=============================================
-Response
-=============================================
-Status Code: 200
-Response Headers:
-	Date: Wed, 26 Mar 2025 16:45:50 GMT
-	Content-Type: application/xml
-	Transfer-Encoding: chunked
-	Connection: keep-alive
-	cf-cache-status: DYNAMIC
-	X-Content-Type-Options: nosniff
-	Server: cloudflare
-	CF-RAY: 92681ee33e7fa581-MIA
-	Content-Encoding: gzip
-
-Response Body:
-&lt;transactions/&gt;
-</p></pre>
-        </div>
-      </div>
-  </div>
 
 
 
@@ -708,7 +676,7 @@ Response Body:
         </div>
         <div id="output-13" class="collapse collapsable-details " >
           
-          <pre><p>📌 ✅ Scenario finished: PASSED</p></pre>
+          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
         </div>
       </div>
   </div>

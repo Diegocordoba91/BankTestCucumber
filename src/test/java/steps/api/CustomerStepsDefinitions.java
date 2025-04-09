@@ -32,7 +32,9 @@ public class CustomerStepsDefinitions{
 
     @When("Se llama el request de customer con usuario {string}")
     public void Se_llama_el_request_de_customer_con_usuario(String typeUser) {
+        
         customerRequest.getCustomer(typeUser);
+        scenarioManager.log(ResponseManager.toStringRequest());
     }
 
 
@@ -49,6 +51,20 @@ public class CustomerStepsDefinitions{
     @Then("Se captura el id del usuario")
     public void setIdUser() {
         customerRequest.setIdUser();
+    }
+
+
+    @Given("Se obtiene el id del usuario")
+    public void getUserId() {
+        scenarioManager.log("Id del usuario: " + customerRequest.getIDCustomer());
+    }
+
+    
+    @When("Se llama el request de customer por id")
+    public void getCustomerById() {
+        customerRequest.getCustomerById(customerRequest.getIDCustomer());
+        scenarioManager.log(ResponseManager.toStringRequest());
+
     }
 
 
