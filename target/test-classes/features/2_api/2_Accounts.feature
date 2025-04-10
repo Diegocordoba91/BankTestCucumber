@@ -13,3 +13,10 @@ Feature: Accounts API
         Given Se obtiene el núemero de cuenta del usuario
         When Se llama al request de consulta de transacciones
         Then Se verifica el status code 200
+
+    @regression @API
+    Scenario: Create new account
+        Given Se obtiene el número de cuenta con fondos
+        When Se llama al request de creción de cuenta con tipo de cuenta "LOAN"
+        Then Se verifica el status code 200
+        And Se verifica el tipo de cuenta creada        

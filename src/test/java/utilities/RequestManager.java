@@ -4,11 +4,12 @@ import io.cucumber.java.Scenario;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.specification.FilterableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 
 public class RequestManager {
 
-
+    
     
     public void initRequest(){
         Logs.debug("Creando el request");
@@ -20,16 +21,6 @@ public class RequestManager {
         
     }
 
-        /* 
-         *  public String toStringRequest(){
-        final var requesSpect = RequestProvider.get();
-        final var request = String.format("(/s)" /t "/s", requesSpect.getUri());
-        return 
-    }
-
-        */
-   
- 
 
     
     public RequestSpecification buildRequestSpec(){
@@ -40,6 +31,22 @@ public class RequestManager {
         .setContentType(ContentType.JSON) // 3. Establece el tipo de contenido de la solicitud en JSON
         .build(); // 4. Construye y devuelve la especificación de la solicitud
     }
+
+    public static String toStringRequest(){
+        final FilterableRequestSpecification request = (FilterableRequestSpecification) RequestProvider.get(); // 1. Obtiene la especificación de solicitud del RequestProvider
+        return String.format("""
+                            \n=============================================
+                            Request
+                            =============================================
+                            %s \t %s
+                            Request Headers:
+                            %s
+                            Request Body:
+                            %s
+                            """,request.getMethod(),request.getURI(),request.getHeaders().asList(),request.getBody());
+    }   
+
+
 
 
 

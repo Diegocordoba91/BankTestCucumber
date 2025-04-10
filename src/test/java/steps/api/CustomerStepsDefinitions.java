@@ -11,6 +11,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utilities.GlobalVariables;
+import utilities.RequestManager;
 import utilities.ResponseManager;
 import utilities.ScenarioManager;
 
@@ -34,7 +35,8 @@ public class CustomerStepsDefinitions{
     public void Se_llama_el_request_de_customer_con_usuario(String typeUser) {
         
         customerRequest.getCustomer(typeUser);
-        scenarioManager.log(ResponseManager.toStringRequest());
+        scenarioManager.log(RequestManager.toStringRequest());
+        
     }
 
 
@@ -63,7 +65,8 @@ public class CustomerStepsDefinitions{
     @When("Se llama el request de customer por id")
     public void getCustomerById() {
         customerRequest.getCustomerById(customerRequest.getIDCustomer());
-        scenarioManager.log(ResponseManager.toStringRequest());
+        scenarioManager.log(RequestManager.toStringRequest());
+        
 
     }
 

@@ -18,6 +18,7 @@ import org.openqa.selenium.json.Json;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.github.dockerjava.transport.DockerHttpClient.Request;
 
 import groovy.xml.XmlParser;
 import io.cucumber.java.Scenario;
@@ -33,7 +34,8 @@ public class ResponseManager {
 
     private static Response response;
     private static ScenarioManager scenarioManager = ScenarioManager.getScenarioManager();
-    private static FilterableRequestSpecification requestSpec;
+  
+    
    
 
     
@@ -92,11 +94,10 @@ public class ResponseManager {
     public static void setResponse(Response response){//Asigna el response obtenido de la petición al response del ResponseManager
         ResponseManager.response = response;
     }
+
     
-    public static String toStringRequest(){
-        final String requestMethodURL = String.format("(%s) \t %s", requestSpec.getMethod(), requestSpec.getURI());
-        return requestMethodURL;
-    }
+    
+
 
     public static String toStringBodyResponse(){
 

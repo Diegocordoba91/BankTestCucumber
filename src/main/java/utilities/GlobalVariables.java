@@ -116,6 +116,13 @@ public class GlobalVariables {
         this.accountsApi = accountsApi;
     }
 
+    public void addAccountApi(Account account) {
+        if (accountsApi == null) {
+            accountsApi = new ListAccounts(new ArrayList<>());
+        }
+        accountsApi.account().add(account);
+    }
+
 
 
 

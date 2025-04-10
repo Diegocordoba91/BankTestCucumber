@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>API Test Diego Cordoba</td>
         <td>1</td>
-      <td>09 abr 2025, 09:54</td>
+      <td>10 abr 2025, 11:31</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Customer API</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >3</td>
-          <td     class="skipped"   >7</td>
+          <td      class="passed"    >11</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">11</td>
 
+          <td  class="passed"    >3</td>
           <td >0</td>
-          <td  class="failed"    >3</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="2185901200">2.185</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="2418668500">2.418</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Customer API</span>
 
@@ -197,12 +197,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.201</span>
+  <span class="lead-duration duration">1.222</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">consulta el detalle de un cliente por userName y password</span>
 
@@ -213,7 +213,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -252,9 +252,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -264,15 +264,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">Se llama el request de customer con usuario <span class="argument">&quot;Correcto&quot;</span></span>
 
-  <span class="lead-duration duration">1.201</span>
+  <span class="lead-duration duration">1.145</span>
 
 </div>
 
@@ -281,40 +281,46 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.NullPointerException:</a>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>📌 
+=============================================
+Request
+=============================================
+GET 	 https://parabank.parasoft.com/parabank/services/bank/login/jeramysteuber/xgg7y0
+Request Headers:
+[Accept=*/*, Content-Type=application/json]
+Request Body:
+null
+</p></pre>
+        </div>
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null
-	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
-	at ✽.Se llama el request de customer con usuario &quot;Correcto&quot;(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:6)
-</pre>
-      </div>
-    </div>
   </div>
 
 
 
 
 
-
-
-
-
-
-
       </div>
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">Se verifica el status code <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -328,6 +334,48 @@ $(document).ready(function() {
 
 
 
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-5">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-5" class="collapse collapsable-details " >
+          
+          <pre><p>📌 
+=============================================
+Response
+=============================================
+Status Code: 200
+Response Headers:
+	Date: Thu, 10 Apr 2025 16:31:47 GMT
+	Content-Type: application/xml
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	cf-cache-status: DYNAMIC
+	X-Content-Type-Options: nosniff
+	Server: cloudflare
+	CF-RAY: 92e3a2ee4ef3a68f-MIA
+	Content-Encoding: gzip
+
+Response Body:
+&lt;customer&gt;
+  &lt;id&gt;12767&lt;/id&gt;
+  &lt;firstName&gt;Laura&lt;/firstName&gt;
+  &lt;lastName&gt;Beier&lt;/lastName&gt;
+  &lt;address&gt;
+    &lt;street&gt;44107 Bernard Pass, Lake Rupert, IL 77537&lt;/street&gt;
+    &lt;city&gt;Port Vanessa&lt;/city&gt;
+    &lt;state&gt;South Carolina&lt;/state&gt;
+    &lt;zipCode&gt;253879&lt;/zipCode&gt;
+  &lt;/address&gt;
+  &lt;phoneNumber&gt;197.383.2217 x36770&lt;/phoneNumber&gt;
+  &lt;ssn&gt;197-56-4749&lt;/ssn&gt;
+&lt;/customer&gt;
+</p></pre>
+        </div>
+      </div>
+  </div>
 
 
 
@@ -337,11 +385,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">Se verifica el name y lastName del usuario</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.071</span>
 
 </div>
 
@@ -364,7 +412,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">Se captura el id del usuario</span>
 
@@ -395,7 +443,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -407,7 +455,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -423,13 +471,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-7">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-6" class="collapse collapsable-details " >
+        <div id="output-7" class="collapse collapsable-details " >
           
-          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
+          <pre><p>📌 ✅ Scenario finished: PASSED</p></pre>
         </div>
       </div>
   </div>
@@ -454,12 +502,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.570</span>
+  <span class="lead-duration duration">0.658</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">consulta el detalle de un cliente por userName y password incorrecto</span>
 
@@ -470,11 +518,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-8" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-9">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -486,7 +534,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-9" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -509,9 +557,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -521,15 +569,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">Se llama el request de customer con usuario <span class="argument">&quot;Incorrecto&quot;</span></span>
 
-  <span class="lead-duration duration">0.570</span>
+  <span class="lead-duration duration">0.658</span>
 
 </div>
 
@@ -538,26 +586,32 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>java.lang.NullPointerException:</a>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-11">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-11" class="collapse collapsable-details " >
+          
+          <pre><p>📌 
+=============================================
+Request
+=============================================
+GET 	 https://parabank.parasoft.com/parabank/services/bank/login/tiffanie.kutch/0aejndg35n
+Request Headers:
+[Accept=*/*, Content-Type=application/json]
+Request Body:
+null
+</p></pre>
+        </div>
       </div>
-      <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null
-	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
-	at ✽.Se llama el request de customer con usuario &quot;Incorrecto&quot;(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:13)
-</pre>
-      </div>
-    </div>
   </div>
-
-
-
-
-
-
 
 
 
@@ -567,7 +621,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">Se verifica el status code <span class="argument">400</span></span>
 
@@ -585,6 +639,35 @@ $(document).ready(function() {
 
 
 
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-12">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-12" class="collapse collapsable-details " >
+          
+          <pre><p>📌 
+=============================================
+Response
+=============================================
+Status Code: 400
+Response Headers:
+	Date: Thu, 10 Apr 2025 16:31:47 GMT
+	Content-Type: text/plain;charset=UTF-8
+	Content-Length: 32
+	Connection: keep-alive
+	cf-cache-status: DYNAMIC
+	X-Content-Type-Options: nosniff
+	Server: cloudflare
+	CF-RAY: 92e3a2f39c5bdb09-MIA
+
+Response Body:
+Invalid username and/or password
+</p></pre>
+        </div>
+      </div>
+  </div>
 
 
 
@@ -598,7 +681,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -610,7 +693,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details ">
+    <div id="after-13" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -626,13 +709,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-12">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-14">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-12" class="collapse collapsable-details " >
+        <div id="output-14" class="collapse collapsable-details " >
           
-          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
+          <pre><p>📌 ✅ Scenario finished: PASSED</p></pre>
         </div>
       </div>
   </div>
@@ -657,12 +740,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.413</span>
+  <span class="lead-duration duration">0.537</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">consulta de detalle de customer por id</span>
 
@@ -673,11 +756,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-15" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -689,13 +772,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-14" class="inner-level collapse collapsable-details ">
+    <div id="before-16" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">hooks.Hooks.setupApi(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -712,9 +795,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -724,7 +807,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -732,7 +815,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Se obtiene el id del usuario</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -748,13 +831,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-16">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-18">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-16" class="collapse collapsable-details " >
+        <div id="output-18" class="collapse collapsable-details " >
           
-          <pre><p>📌 Id del usuario: 0</p></pre>
+          <pre><p>📌 Id del usuario: 12767</p></pre>
         </div>
       </div>
   </div>
@@ -767,11 +850,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">Se llama el request de customer por id</span>
 
-  <span class="lead-duration duration">0.411</span>
+  <span class="lead-duration duration">0.534</span>
 
 </div>
 
@@ -780,26 +863,32 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
-          <a>java.lang.NullPointerException:</a>
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-19">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-19" class="collapse collapsable-details " >
+          
+          <pre><p>📌 
+=============================================
+Request
+=============================================
+GET 	 https://parabank.parasoft.com/parabank/services/bank/customers/12767
+Request Headers:
+[Accept=*/*, Content-Type=application/json]
+Request Body:
+null
+</p></pre>
+        </div>
       </div>
-      <div id="msg-17" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null
-	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-	at steps.api.CustomerStepsDefinitions.getCustomerById(CustomerStepsDefinitions.java:66)
-	at ✽.Se llama el request de customer por id(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:19)
-</pre>
-      </div>
-    </div>
   </div>
-
-
-
-
-
-
 
 
 
@@ -809,7 +898,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">Se verifica el status code <span class="argument">200</span></span>
 
@@ -827,6 +916,48 @@ $(document).ready(function() {
 
 
 
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-20">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-20" class="collapse collapsable-details " >
+          
+          <pre><p>📌 
+=============================================
+Response
+=============================================
+Status Code: 200
+Response Headers:
+	Date: Thu, 10 Apr 2025 16:31:48 GMT
+	Content-Type: application/xml
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	cf-cache-status: DYNAMIC
+	X-Content-Type-Options: nosniff
+	Server: cloudflare
+	CF-RAY: 92e3a2f6f860875a-MIA
+	Content-Encoding: gzip
+
+Response Body:
+&lt;customer&gt;
+  &lt;id&gt;12767&lt;/id&gt;
+  &lt;firstName&gt;Laura&lt;/firstName&gt;
+  &lt;lastName&gt;Beier&lt;/lastName&gt;
+  &lt;address&gt;
+    &lt;street&gt;44107 Bernard Pass, Lake Rupert, IL 77537&lt;/street&gt;
+    &lt;city&gt;Port Vanessa&lt;/city&gt;
+    &lt;state&gt;South Carolina&lt;/state&gt;
+    &lt;zipCode&gt;253879&lt;/zipCode&gt;
+  &lt;/address&gt;
+  &lt;phoneNumber&gt;197.383.2217 x36770&lt;/phoneNumber&gt;
+  &lt;ssn&gt;197-56-4749&lt;/ssn&gt;
+&lt;/customer&gt;
+</p></pre>
+        </div>
+      </div>
+  </div>
 
 
 
@@ -836,11 +967,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">Se verifica el name y lastName del usuario</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -863,11 +994,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">Se captura el id del usuario</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -894,7 +1025,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -906,7 +1037,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details ">
+    <div id="after-21" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -922,13 +1053,13 @@ $(document).ready(function() {
 
   <div class="outputs inner-level">
       <div class="output indention">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-19">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-22">
           Output 1
           <i class="chevron fa fa-fw"></i>
         </div>
-        <div id="output-19" class="collapse collapsable-details " >
+        <div id="output-22" class="collapse collapsable-details " >
           
-          <pre><p>📌 ✅ Scenario finished: FAILED</p></pre>
+          <pre><p>📌 ✅ Scenario finished: PASSED</p></pre>
         </div>
       </div>
   </div>

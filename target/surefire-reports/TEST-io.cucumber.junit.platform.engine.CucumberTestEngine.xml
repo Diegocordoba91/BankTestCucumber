@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="io.cucumber.junit.platform.engine.CucumberTestEngine" time="20.434" tests="6" errors="4" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="io.cucumber.junit.platform.engine.CucumberTestEngine" time="18.891" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CO"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\diego\AppData\Local\Temp\surefire15345820053793833776\surefirebooter-20250409095339014_3.jar C:\Users\diego\AppData\Local\Temp\surefire15345820053793833776 2025-04-09T09-53-38_872-jvmRun1 surefire-20250409095339014_1tmp surefire_0-20250409095339014_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\diego\AppData\Local\Temp\surefire109283633437590481\surefirebooter-20250410113132559_3.jar C:\Users\diego\AppData\Local\Temp\surefire109283633437590481 2025-04-10T11-31-32_468-jvmRun1 surefire-20250410113132559_1tmp surefire_0-20250410113132559_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\diego\Documents\1. Automation\projectbanktest\target\test-classes;C:\Users\diego\Documents\1. Automation\projectbanktest\target\classes;C:\Users\diego\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\diego\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.3\log4j-core-2.24.3.jar;C:\Users\diego\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\diego\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\diego\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\diego\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\diego\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\diego\.m2\repository\com\github\ozlerhakan\poiji\4.7.0\poiji-4.7.0.jar;C:\Users\diego\.m2\repository\org\apache\poi\poi-ooxml\5.4.0\poi-ooxml-5.4.0.jar;C:\Users\diego\.m2\repository\org\apache\poi\poi\5.4.0\poi-5.4.0.jar;C:\Users\diego\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\diego\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\diego\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.0\poi-ooxml-lite-5.4.0.jar;C:\Users\diego\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\diego\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\diego\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\diego\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.2\jackson-databind-2.18.2.jar;C:\Users\diego\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.2\jackson-annotations-2.18.2.jar;C:\Users\diego\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.2\jackson-core-2.18.2.jar;C:\Users\diego\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\diego\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\diego\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\diego\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\diego\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\diego\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\diego\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\diego\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\diego\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\diego\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\diego\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\diego\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\diego\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\diego\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\diego\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\diego\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\diego\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\diego\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\diego\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\diego\.m2\repository\io\rest-assured\json-schema-validator\5.5.1\json-schema-validator-5.5.1.jar;C:\Users\diego\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\diego\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\diego\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\diego\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\diego\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\diego\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\diego\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\diego\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\diego\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\diego\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\diego\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\diego\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\diego\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\diego\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\diego\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\diego\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\diego\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\diego\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\diego\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.21.1\cucumber-junit-platform-engine-7.21.1.jar;C:\Users\diego\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\diego\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\diego\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\diego\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\diego\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\diego\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\diego\.m2\repository\io\cucumber\query\13.2.0\query-13.2.0.jar;C:\Users\diego\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\diego\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\diego\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\diego\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\diego\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\diego\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\diego\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\diego\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-engine\1.12.0\junit-platform-engine-1.12.0.jar;C:\Users\diego\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\diego\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\diego\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\diego\.m2\repository\net\masterthought\cucumber-reporting\5.8.4\cucumber-reporting-5.8.4.jar;C:\Users\diego\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.1\jackson-datatype-jsr310-2.18.1.jar;C:\Users\diego\.m2\repository\org\apache\velocity\velocity-engine-core\2.4.1\velocity-engine-core-2.4.1.jar;C:\Users\diego\.m2\repository\joda-time\joda-time\2.13.0\joda-time-2.13.0.jar;C:\Users\diego\.m2\repository\org\apache\commons\commons-configuration2\2.11.0\commons-configuration2-2.11.0.jar;C:\Users\diego\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar;C:\Users\diego\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar;C:\Users\diego\.m2\repository\org\jsoup\jsoup\1.18.1\jsoup-1.18.1.jar;C:\Users\diego\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20240325.1\owasp-java-html-sanitizer-20240325.1.jar;C:\Users\diego\.m2\repository\com\googlecode\owasp-java-html-sanitizer\java8-shim\20240325.1\java8-shim-20240325.1.jar;C:\Users\diego\.m2\repository\com\googlecode\owasp-java-html-sanitizer\java10-shim\20240325.1\java10-shim-20240325.1.jar;C:\Users\diego\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.16\jcl-over-slf4j-2.0.16.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.0\junit-jupiter-5.12.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.0\junit-jupiter-api-5.12.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.0\junit-jupiter-params-5.12.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.0\junit-jupiter-engine-5.12.0.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-suite-api\1.8.0\junit-platform-suite-api-1.8.0.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-commons\1.12.0\junit-platform-commons-1.12.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\diego\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\diego\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\diego\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\diego\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\diego\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\diego\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\diego\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.3\webdrivermanager-5.9.3.jar;C:\Users\diego\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\diego\.m2\repository\com\github\docker-java\docker-java\3.4.1\docker-java-3.4.1.jar;C:\Users\diego\.m2\repository\com\github\docker-java\docker-java-core\3.4.1\docker-java-core-3.4.1.jar;C:\Users\diego\.m2\repository\com\github\docker-java\docker-java-api\3.4.1\docker-java-api-3.4.1.jar;C:\Users\diego\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.1\docker-java-transport-httpclient5-3.4.1.jar;C:\Users\diego\.m2\repository\com\github\docker-java\docker-java-transport\3.4.1\docker-java-transport-3.4.1.jar;C:\Users\diego\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\diego\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\diego\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\diego\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\diego\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\diego\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\diego\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-xml\2.18.3\jackson-dataformat-xml-2.18.3.jar;C:\Users\diego\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.2\stax2-api-4.2.2.jar;C:\Users\diego\.m2\repository\com\fasterxml\woodstox\woodstox-core\7.0.0\woodstox-core-7.0.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\diego\AppData\Local\Temp\surefire15345820053793833776\surefirebooter-20250409095339014_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\diego\AppData\Local\Temp\surefire109283633437590481\surefirebooter-20250410113132559_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="Registro de usuarios - Creación de nuevo usuario" classname="Registro de usuarios" time="17.3">
+  <testcase name="Registro de usuarios - Creación de nuevo usuario" classname="Registro de usuarios" time="14.344">
     <system-out><![CDATA[Before all
 
 @UI @regression @smoke @API
@@ -71,14 +71,14 @@ Scenario: Creación de nuevo usuario                                            
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mEl usuario hace click en el boton register&amp#27;[0m                                                                                   &amp#27;[90m# steps.ui.LoginStepDefinition.El_usuario_hace_click_en_el_boton_register()&amp#27;[0m
 Elemento By.id: customer.username.errors no se encuentra visible.
 
-    📌 La cantidad de intentos fueron: 4
+    📌 La cantidad de intentos fueron: 1
 
 
-    📌 Usuario creado : susyheathcote con password: of5e71
+    📌 Usuario creado : jeramysteuber con password: xgg7y0
 
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe verifica que el nombre de usuario sea válido; en caso contrario, se intenta con uno nuevo&amp#27;[0m                                 &amp#27;[90m# steps.ui.LoginStepDefinition.Se_verifica_que_el_nombre_de_usuario_sea_v_lido_en_caso_contrario_se_intenta_con_uno_nuevo()&amp#27;[0m
 
-    Embedding ScreenShot [image/png 205886 bytes]
+    Embedding ScreenShot [image/png 205481 bytes]
 
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSe verifica que el usuario visualice en pantalla el mensaje &amp#27;[0m&amp#27;[32m&amp#27;[1m"Your account was created successfully. You are now logged in."&amp#27;[0m &amp#27;[90m# steps.ui.LoginStepDefinition.El_usuario_visualiza_en_pantalla_el_mensaje(java.lang.String)&amp#27;[0m
 
@@ -88,7 +88,7 @@ Elemento By.id: customer.username.errors no se encuentra visible.
     📌 ✅ Scenario finished: PASSED
 
 ]]></system-out>
-    <system-err><![CDATA[abr 09, 2025 9:53:39 A. M. io.cucumber.junit.platform.engine.DiscoverySelectorResolver warnWhenCucumberFeaturesPropertyIsUsed
+    <system-err><![CDATA[abr 10, 2025 11:31:33 A. M. io.cucumber.junit.platform.engine.DiscoverySelectorResolver warnWhenCucumberFeaturesPropertyIsUsed
 WARNING: Discovering tests using the cucumber.features property. Other discovery selectors are ignored!
 
 This is a work around for the limited JUnit 5 support in Maven and Gradle. Please request/upvote/sponsor/ect better support for JUnit 5 discovery selectors. For details see: https://github.com/cucumber/cucumber-jvm/pull/2498
@@ -98,130 +98,318 @@ If you are using the JUnit 5 Suite Engine, Platform Launcher API or Console Laun
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\diego\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe
 ]]></system-err>
   </testcase>
-  <testcase name="Customer API - consulta el detalle de un cliente por userName y password" classname="Customer API" time="1.224">
-    <error message="Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
-	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
-	at ✽.Se llama el request de customer con usuario "Correcto"(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:6)
-]]></error>
+  <testcase name="Customer API - consulta el detalle de un cliente por userName y password" classname="Customer API" time="1.235">
     <system-out><![CDATA[
 @API @regression @API
 Scenario: consulta el detalle de un cliente por userName y password &amp#27;[90m# src/test/resources/features/2_api/1_Customer.feature:5&amp#27;[0m
-(GET) 	 https://parabank.parasoft.com/parabank/services/bank/login/susyheathcote/of5e71
-Status Code: 200 	 Response Time: 835ms
-  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mSe llama el request de customer con usuario &amp#27;[0m&amp#27;[31m&amp#27;[1m"Correcto"&amp#27;[0m       &amp#27;[90m# steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
-      	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-      	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
-      	at ✽.Se llama el request de customer con usuario "Correcto"(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:6)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mSe verifica el status code &amp#27;[0m&amp#27;[36m&amp#27;[1m200&amp#27;[0m                               &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSe verifica el name y lastName del usuario&amp#27;[0m                    &amp#27;[90m# steps.api.CustomerStepsDefinitions.verifyNameLastname()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSe captura el id del usuario&amp#27;[0m                                  &amp#27;[90m# steps.api.CustomerStepsDefinitions.setIdUser()&amp#27;[0m
+(GET) 	 https://parabank.parasoft.com/parabank/services/bank/login/jeramysteuber/xgg7y0
+Status Code: 200 	 Response Time: 762ms
 
-    📌 ✅ Scenario finished: FAILED
+    📌 
+    =============================================
+    Request
+    =============================================
+    GET 	 https://parabank.parasoft.com/parabank/services/bank/login/jeramysteuber/xgg7y0
+    Request Headers:
+    [Accept=*/*, Content-Type=application/json]
+    Request Body:
+    null
+
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mSe llama el request de customer con usuario &amp#27;[0m&amp#27;[32m&amp#27;[1m"Correcto"&amp#27;[0m       &amp#27;[90m# steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(java.lang.String)&amp#27;[0m
+
+    📌 
+    =============================================
+    Response
+    =============================================
+    Status Code: 200
+    Response Headers:
+    	Date: Thu, 10 Apr 2025 16:31:47 GMT
+    	Content-Type: application/xml
+    	Transfer-Encoding: chunked
+    	Connection: keep-alive
+    	cf-cache-status: DYNAMIC
+    	X-Content-Type-Options: nosniff
+    	Server: cloudflare
+    	CF-RAY: 92e3a2ee4ef3a68f-MIA
+    	Content-Encoding: gzip
+    
+    Response Body:
+    <customer>
+      <id>12767</id>
+      <firstName>Laura</firstName>
+      <lastName>Beier</lastName>
+      <address>
+        <street>44107 Bernard Pass, Lake Rupert, IL 77537</street>
+        <city>Port Vanessa</city>
+        <state>South Carolina</state>
+        <zipCode>253879</zipCode>
+      </address>
+      <phoneNumber>197.383.2217 x36770</phoneNumber>
+      <ssn>197-56-4749</ssn>
+    </customer>
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSe verifica el status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                               &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe verifica el name y lastName del usuario&amp#27;[0m                    &amp#27;[90m# steps.api.CustomerStepsDefinitions.verifyNameLastname()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe captura el id del usuario&amp#27;[0m                                  &amp#27;[90m# steps.api.CustomerStepsDefinitions.setIdUser()&amp#27;[0m
+
+    📌 ✅ Scenario finished: PASSED
 
 ]]></system-out>
   </testcase>
-  <testcase name="Customer API - consulta el detalle de un cliente por userName y password incorrecto" classname="Customer API" time="0.58">
-    <error message="Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
-	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
-	at ✽.Se llama el request de customer con usuario "Incorrecto"(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:13)
-]]></error>
+  <testcase name="Customer API - consulta el detalle de un cliente por userName y password incorrecto" classname="Customer API" time="0.668">
     <system-out><![CDATA[
 @API @regression @API
 Scenario: consulta el detalle de un cliente por userName y password incorrecto &amp#27;[90m# src/test/resources/features/2_api/1_Customer.feature:12&amp#27;[0m
-(GET) 	 https://parabank.parasoft.com/parabank/services/bank/login/al.wolf/z4lqn7a8bi3tm
-Status Code: 400 	 Response Time: 521ms
-  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mSe llama el request de customer con usuario &amp#27;[0m&amp#27;[31m&amp#27;[1m"Incorrecto"&amp#27;[0m                &amp#27;[90m# steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
-      	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-      	at steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(CustomerStepsDefinitions.java:37)
-      	at ✽.Se llama el request de customer con usuario "Incorrecto"(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:13)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mSe verifica el status code &amp#27;[0m&amp#27;[36m&amp#27;[1m400&amp#27;[0m                                          &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+(GET) 	 https://parabank.parasoft.com/parabank/services/bank/login/tiffanie.kutch/0aejndg35n
+Status Code: 400 	 Response Time: 581ms
 
-    📌 ✅ Scenario finished: FAILED
+    📌 
+    =============================================
+    Request
+    =============================================
+    GET 	 https://parabank.parasoft.com/parabank/services/bank/login/tiffanie.kutch/0aejndg35n
+    Request Headers:
+    [Accept=*/*, Content-Type=application/json]
+    Request Body:
+    null
+
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mSe llama el request de customer con usuario &amp#27;[0m&amp#27;[32m&amp#27;[1m"Incorrecto"&amp#27;[0m                &amp#27;[90m# steps.api.CustomerStepsDefinitions.Se_llama_el_request_de_customer_con_usuario(java.lang.String)&amp#27;[0m
+
+    📌 
+    =============================================
+    Response
+    =============================================
+    Status Code: 400
+    Response Headers:
+    	Date: Thu, 10 Apr 2025 16:31:47 GMT
+    	Content-Type: text/plain;charset=UTF-8
+    	Content-Length: 32
+    	Connection: keep-alive
+    	cf-cache-status: DYNAMIC
+    	X-Content-Type-Options: nosniff
+    	Server: cloudflare
+    	CF-RAY: 92e3a2f39c5bdb09-MIA
+    
+    Response Body:
+    Invalid username and/or password
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSe verifica el status code &amp#27;[0m&amp#27;[32m&amp#27;[1m400&amp#27;[0m                                          &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+
+    📌 ✅ Scenario finished: PASSED
 
 ]]></system-out>
   </testcase>
-  <testcase name="Customer API - consulta de detalle de customer por id" classname="Customer API" time="0.42">
-    <error message="Cannot invoke &quot;io.restassured.specification.FilterableRequestSpecification.getMethod()&quot; because &quot;utilities.ResponseManager.requestSpec&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
-	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-	at steps.api.CustomerStepsDefinitions.getCustomerById(CustomerStepsDefinitions.java:66)
-	at ✽.Se llama el request de customer por id(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:19)
-]]></error>
+  <testcase name="Customer API - consulta de detalle de customer por id" classname="Customer API" time="0.546">
     <system-out><![CDATA[
 @API @regression @API
 Scenario: consulta de detalle de customer por id &amp#27;[90m# src/test/resources/features/2_api/1_Customer.feature:17&amp#27;[0m
 
-    📌 Id del usuario: 0
+    📌 Id del usuario: 12767
 
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mSe obtiene el id del usuario&amp#27;[0m             &amp#27;[90m# steps.api.CustomerStepsDefinitions.getUserId()&amp#27;[0m
-(GET) 	 https://parabank.parasoft.com/parabank/services/bank/customers/0
-Status Code: 400 	 Response Time: 390ms
-  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mSe llama el request de customer por id&amp#27;[0m    &amp#27;[90m# steps.api.CustomerStepsDefinitions.getCustomerById()&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "io.restassured.specification.FilterableRequestSpecification.getMethod()" because "utilities.ResponseManager.requestSpec" is null
-      	at utilities.ResponseManager.toStringRequest(ResponseManager.java:97)
-      	at steps.api.CustomerStepsDefinitions.getCustomerById(CustomerStepsDefinitions.java:66)
-      	at ✽.Se llama el request de customer por id(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/1_Customer.feature:19)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mSe verifica el status code &amp#27;[0m&amp#27;[36m&amp#27;[1m200&amp#27;[0m            &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSe verifica el name y lastName del usuario&amp#27;[0m &amp#27;[90m# steps.api.CustomerStepsDefinitions.verifyNameLastname()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSe captura el id del usuario&amp#27;[0m               &amp#27;[90m# steps.api.CustomerStepsDefinitions.setIdUser()&amp#27;[0m
+(GET) 	 https://parabank.parasoft.com/parabank/services/bank/customers/12767
+Status Code: 200 	 Response Time: 525ms
 
-    📌 ✅ Scenario finished: FAILED
+    📌 
+    =============================================
+    Request
+    =============================================
+    GET 	 https://parabank.parasoft.com/parabank/services/bank/customers/12767
+    Request Headers:
+    [Accept=*/*, Content-Type=application/json]
+    Request Body:
+    null
+
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mSe llama el request de customer por id&amp#27;[0m    &amp#27;[90m# steps.api.CustomerStepsDefinitions.getCustomerById()&amp#27;[0m
+
+    📌 
+    =============================================
+    Response
+    =============================================
+    Status Code: 200
+    Response Headers:
+    	Date: Thu, 10 Apr 2025 16:31:48 GMT
+    	Content-Type: application/xml
+    	Transfer-Encoding: chunked
+    	Connection: keep-alive
+    	cf-cache-status: DYNAMIC
+    	X-Content-Type-Options: nosniff
+    	Server: cloudflare
+    	CF-RAY: 92e3a2f6f860875a-MIA
+    	Content-Encoding: gzip
+    
+    Response Body:
+    <customer>
+      <id>12767</id>
+      <firstName>Laura</firstName>
+      <lastName>Beier</lastName>
+      <address>
+        <street>44107 Bernard Pass, Lake Rupert, IL 77537</street>
+        <city>Port Vanessa</city>
+        <state>South Carolina</state>
+        <zipCode>253879</zipCode>
+      </address>
+      <phoneNumber>197.383.2217 x36770</phoneNumber>
+      <ssn>197-56-4749</ssn>
+    </customer>
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSe verifica el status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m            &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe verifica el name y lastName del usuario&amp#27;[0m &amp#27;[90m# steps.api.CustomerStepsDefinitions.verifyNameLastname()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe captura el id del usuario&amp#27;[0m               &amp#27;[90m# steps.api.CustomerStepsDefinitions.setIdUser()&amp#27;[0m
+
+    📌 ✅ Scenario finished: PASSED
 
 ]]></system-out>
   </testcase>
-  <testcase name="Accounts API - Get Account Details" classname="Accounts API" time="0.596">
-    <failure message="Status code mismatch ==&gt; expected: &lt;200&gt; but was: &lt;400&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Status code mismatch ==> expected: <200> but was: <400>
-	at utilities.ResponseManager.verifyStatusCode(ResponseManager.java:45)
-	at steps.api.CommonStepDefinitionsApi.verifyStatusCode(CommonStepDefinitionsApi.java:17)
-	at ✽.Se verifica el status code 200(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:7)
-]]></failure>
+  <testcase name="Accounts API - Get Account Details" classname="Accounts API" time="0.747">
     <system-out><![CDATA[
 @API @regression @API
 Scenario: Get Account Details                                                   &amp#27;[90m# src/test/resources/features/2_api/2_Accounts.feature:5&amp#27;[0m
-(GET) 	 https://parabank.parasoft.com/parabank/services/bank/customers/0/accounts
-Status Code: 400 	 Response Time: 576ms
+(GET) 	 https://parabank.parasoft.com/parabank/services/bank/customers/12767/accounts
+Status Code: 200 	 Response Time: 503ms
+
+    📌 
+    =============================================
+    Request
+    =============================================
+    GET 	 https://parabank.parasoft.com/parabank/services/bank/customers/12767/accounts
+    Request Headers:
+    [Accept=*/*, Content-Type=application/json]
+    Request Body:
+    null
+
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mSe llama al request de cuentas del usuario, obteniendo el id del usuario&amp#27;[0m &amp#27;[90m# steps.api.AccountsStepDefinitionApi.getAccountsByUserId()&amp#27;[0m
 
-    📌 ❌ ERROR: Expected 200, but got: 400
+    📌 
+    =============================================
+    Response
+    =============================================
+    Status Code: 200
+    Response Headers:
+    	Date: Thu, 10 Apr 2025 16:31:49 GMT
+    	Content-Type: application/xml
+    	Transfer-Encoding: chunked
+    	Connection: keep-alive
+    	cf-cache-status: DYNAMIC
+    	X-Content-Type-Options: nosniff
+    	Server: cloudflare
+    	CF-RAY: 92e3a2fa4c71a563-MIA
+    	Content-Encoding: gzip
+    
+    Response Body:
+    <accounts>
+      <account>
+        <id>13899</id>
+        <customerId>12767</customerId>
+        <type>CHECKING</type>
+        <balance>5000.00</balance>
+      </account>
+    </accounts>
 
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mSe verifica el status code &amp#27;[0m&amp#27;[31m&amp#27;[1m200&amp#27;[0m                                           &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
-      &amp#27;[31morg.opentest4j.AssertionFailedError: Status code mismatch ==> expected: <200> but was: <400>
-      	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-      	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-      	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-      	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-      	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
-      	at utilities.ResponseManager.verifyStatusCode(ResponseManager.java:45)
-      	at steps.api.CommonStepDefinitionsApi.verifyStatusCode(CommonStepDefinitionsApi.java:17)
-      	at ✽.Se verifica el status code 200(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:7)&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSe verifica que el id del response sea el del usuario&amp#27;[0m                     &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_verifica_que_el_id_del_response_sea_el_del_usuario()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSe almancenan las cuentas del usuario&amp#27;[0m                                     &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_almancenan_las_cuentas_del_usuario()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSe verifica el status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                           &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe verifica que el id del response sea el del usuario&amp#27;[0m                     &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_verifica_que_el_id_del_response_sea_el_del_usuario()&amp#27;[0m
 
-    📌 ✅ Scenario finished: FAILED
+    📌 Las cuentas almacenadas son: ListAccounts[account=[Account[customerId=12767, accountNumber=13899, balance=5000.0, availableAmount=0.0, typeAccount=CHECKING]]]
+
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe almancenan las cuentas del usuario&amp#27;[0m                                     &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_almancenan_las_cuentas_del_usuario()&amp#27;[0m
+
+    📌 ✅ Scenario finished: PASSED
 
 ]]></system-out>
   </testcase>
-  <testcase name="Accounts API - Get transactoins by account" classname="Accounts API" time="0.008">
-    <error message="Cannot invoke &quot;models.ListAccounts.account()&quot; because the return value of &quot;utilities.GlobalVariables.getAccountsApi()&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "models.ListAccounts.account()" because the return value of "utilities.GlobalVariables.getAccountsApi()" is null
-	at apis.customer.AccountsRequest.getNumberAccount(AccountsRequest.java:51)
-	at steps.api.AccountsStepDefinitionApi.Se_obtiene_el_n_emero_de_cuenta_del_usuario(AccountsStepDefinitionApi.java:42)
-	at ✽.Se obtiene el núemero de cuenta del usuario(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:13)
-]]></error>
+  <testcase name="Accounts API - Get transactoins by account" classname="Accounts API" time="0.522">
     <system-out><![CDATA[
 @API @regression @API
 Scenario: Get transactoins by account                   &amp#27;[90m# src/test/resources/features/2_api/2_Accounts.feature:12&amp#27;[0m
-  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mSe obtiene el núemero de cuenta del usuario&amp#27;[0m     &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_obtiene_el_n_emero_de_cuenta_del_usuario()&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "models.ListAccounts.account()" because the return value of "utilities.GlobalVariables.getAccountsApi()" is null
-      	at apis.customer.AccountsRequest.getNumberAccount(AccountsRequest.java:51)
-      	at steps.api.AccountsStepDefinitionApi.Se_obtiene_el_n_emero_de_cuenta_del_usuario(AccountsStepDefinitionApi.java:42)
-      	at ✽.Se obtiene el núemero de cuenta del usuario(file:///C:/Users/diego/Documents/1.%20Automation/projectbanktest/src/test/resources/features/2_api/2_Accounts.feature:13)&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mSe llama al request de consulta de transacciones&amp#27;[0m &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_llama_al_request_de_consulta_de_transacciones()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mSe verifica el status code &amp#27;[0m&amp#27;[36m&amp#27;[1m200&amp#27;[0m                   &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mSe obtiene el núemero de cuenta del usuario&amp#27;[0m     &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_obtiene_el_n_emero_de_cuenta_del_usuario()&amp#27;[0m
+(GET) 	 https://parabank.parasoft.com/parabank/services/bank/accounts/13899/transactions
+Status Code: 200 	 Response Time: 508ms
 
-    📌 ✅ Scenario finished: FAILED
+    📌 
+    =============================================
+    Request
+    =============================================
+    GET 	 https://parabank.parasoft.com/parabank/services/bank/accounts/13899/transactions
+    Request Headers:
+    [Accept=*/*, Content-Type=application/json]
+    Request Body:
+    null
+
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mSe llama al request de consulta de transacciones&amp#27;[0m &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_llama_al_request_de_consulta_de_transacciones()&amp#27;[0m
+
+    📌 
+    =============================================
+    Response
+    =============================================
+    Status Code: 200
+    Response Headers:
+    	Date: Thu, 10 Apr 2025 16:31:49 GMT
+    	Content-Type: application/xml
+    	Transfer-Encoding: chunked
+    	Connection: keep-alive
+    	cf-cache-status: DYNAMIC
+    	X-Content-Type-Options: nosniff
+    	Server: cloudflare
+    	CF-RAY: 92e3a2ff0d1f2583-MIA
+    	Content-Encoding: gzip
+    
+    Response Body:
+    <transactions/>
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSe verifica el status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                   &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+
+    📌 ✅ Scenario finished: PASSED
+
+]]></system-out>
+  </testcase>
+  <testcase name="Accounts API - Create new account" classname="Accounts API" time="0.543">
+    <system-out><![CDATA[
+@API @regression @API
+Scenario: Create new account                                              &amp#27;[90m# src/test/resources/features/2_api/2_Accounts.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mSe obtiene el número de cuenta con fondos&amp#27;[0m                         &amp#27;[90m# steps.api.AccountsStepDefinitionApi.getNumberAccountWithFunds()&amp#27;[0m
+(POST) 	 https://parabank.parasoft.com/parabank/services/bank/createAccount?newAccountType=2&customerId=12767&fromAccountId=13899
+Status Code: 200 	 Response Time: 508ms
+
+    📌 
+    =============================================
+    Request
+    =============================================
+    POST 	 https://parabank.parasoft.com/parabank/services/bank/createAccount?newAccountType=2&customerId=12767&fromAccountId=13899
+    Request Headers:
+    [Accept=*/*, Content-Type=application/json]
+    Request Body:
+    null
+
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mSe llama al request de creción de cuenta con tipo de cuenta &amp#27;[0m&amp#27;[32m&amp#27;[1m"LOAN"&amp#27;[0m &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_llama_al_request_de_creci_n_de_cuenta_con_tipo_de_cuenta(java.lang.String)&amp#27;[0m
+
+    📌 
+    =============================================
+    Response
+    =============================================
+    Status Code: 200
+    Response Headers:
+    	Date: Thu, 10 Apr 2025 16:31:50 GMT
+    	Content-Type: application/xml
+    	Transfer-Encoding: chunked
+    	Connection: keep-alive
+    	cf-cache-status: DYNAMIC
+    	X-Content-Type-Options: nosniff
+    	Server: cloudflare
+    	CF-RAY: 92e3a3024fd87465-MIA
+    	Content-Encoding: gzip
+    
+    Response Body:
+    <account>
+      <id>14232</id>
+      <customerId>12767</customerId>
+      <type>LOAN</type>
+      <balance>0</balance>
+    </account>
+
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSe verifica el status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# steps.api.CommonStepDefinitionsApi.verifyStatusCode(java.lang.Integer)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSe verifica el tipo de cuenta creada&amp#27;[0m                                &amp#27;[90m# steps.api.AccountsStepDefinitionApi.Se_verifica_el_tipo_de_cuenta_creada()&amp#27;[0m
+
+    📌 ✅ Scenario finished: PASSED
 
 ]]></system-out>
   </testcase>
